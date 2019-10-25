@@ -1,0 +1,197 @@
+#partners {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    min-width: 400px;
+    background-image: url('../images/cloud_partners_background.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-bottom: 30px;
+}
+
+.partners-section-background {
+    background-image: url('../images/web-16.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 25%;
+}
+
+#partners-title {
+    text-align: center;
+    font-family: 'IBM Plex Sans', serif;
+    font-weight: bold;
+    color: black;
+    font-size: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-image: url('../images/web-12.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 40%;
+}
+
+#partners-memo {
+    text-align: left;
+    font-family: 'IBM Plex Sans', serif;
+    color: black;
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#partners-container {
+    padding-top: 10px;
+    font-family: 'Open sans', serif;
+    width: 100%;
+    max-width: 1000px;
+    min-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+}
+
+#partners-container-row {
+    display: table-row;
+    max-width: 1000px;
+    min-width: 400px;
+}
+
+#partners-container-item {
+    display: table-cell;
+    font-family: 'IBM Plex Sans', serif;
+    width: 250px;
+    min-width: 250px;
+    margin-left: 20px;
+    height: 230px;
+    vertical-align: top;
+}
+
+.partners-container-item-spacer {
+    display: table-cell;
+    width: 20px;
+    height: 100%;
+}
+
+.partners-container-item-logo {
+    width: 100%;
+    height: 100px;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+
+.fci-bg-bell-soft p {
+    margin-left: 15px;
+    margin-right: 10px;
+    margin-top: 30px;
+
+}
+
+.fci-logo-bell-soft {
+    background-image: url('../images/web-13.png');
+}
+
+
+
+.fci-bg-t-systems p {
+    margin-left: 15px;
+    margin-right: 10px;
+    margin-top: 30px;
+}
+
+.fci-logo-t-systems {
+    background-image: url('../images/web-14.png');
+}
+
+.fci-bg-insight {
+    background-image: url('../images/web-10.png');
+}
+
+.partners-container-item-content {
+    background-repeat: no-repeat;
+    padding-top: 20px;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 300px;
+}
+
+@media only screen and (max-width: 760px) {
+    #partners {
+        padding-bottom: 10px;
+    }
+    
+    #partners-container {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+    
+    .partners-container-item-content {        
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-position: left top;
+        padding-left: 40px;
+        padding-top: 60px;
+    }
+    
+    #partners-container-item {
+        display: block;
+        width: 80%;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto; 
+        margin-bottom: 20px;
+    }
+    
+    .fci-bg-engine p {
+        margin-left:20px;
+    }
+}
+
+@media only screen and (max-device-width: 760px) {
+    #partners {
+        padding-bottom: 10px;
+    }
+    
+    #partners-container {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+    
+    #partners-container-item {
+        display: block;
+        width: 90%;
+        position: relative;
+        padding-top: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    
+    .partners-container-item-content {        
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        font-size: 25px;
+        background-position: left top;
+        padding: 50px;
+        padding-top: 120px;
+        font-size: 40px;
+        width: auto;
+        height: auto;
+    }
+    
+    .fci-bg-engine p {
+        margin-left:120px;
+    }
+}

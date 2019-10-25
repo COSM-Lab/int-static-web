@@ -1,0 +1,84 @@
+#footer {
+    width:100%; 
+    height: 50px;
+    position: absolute;
+    
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#footer-content {
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    max-width: 100%;
+    min-width: 400px;
+    height: 80px;
+    background-image: url('../images/web-28.png');
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    background-size: 90% 7px;
+    background-color: #35799E;
+    font-family: 'IBM Plex Sans', serif;    
+    font-size: 14;
+    vertical-align: bottom;
+    font-family: 'IBM Plex Sans', serif;
+}
+
+.footer-content-row {
+    display: table-row;
+}
+
+.footer-left-wing {
+    display: table-cell;
+    text-align: left;
+    width: 100px;
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    width: 100%;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer-center {
+    display: table-cell;
+    text-align: center;
+}
+
+.footer-right-wing {
+    display: table-cell;
+    text-align: right;
+    width: 100px;
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    width: 100%;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#footer-content-holder {
+    position: relative; 
+    width: 100%; 
+    height: 100%;
+    display: table;
+}
+
+#footer-content span {
+   position: absolute;
+   bottom: 25px;
+   left: 0;
+   width: 100%;
+}
+
+@media only screen and (max-device-width: 760px), (max-width: 760px) {
+    #footer {
+        height: 300px;
+    }
+    
+    #footer-content  {
+        height: 250px;
+    }
+}

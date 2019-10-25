@@ -1,0 +1,180 @@
+#positions {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    min-width: 400px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-bottom: 30px;
+}
+
+.positions-section-background {
+    background-image: url('../images/web-21.png'), url('../images/web-22.png');
+    background-repeat: no-repeat;
+    background-position: left bottom, right bottom;
+    background-size: 25%;
+}
+
+#positions-title {
+    text-align: center;
+    font-family: 'IBM Plex Sans', serif;
+    font-weight: bold;
+    color: black;
+    font-size: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-image: url('../images/web-12.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 40%;
+}
+
+#positions-memo {
+    text-align: left;
+    font-family: 'IBM Plex Sans', serif;
+    color: black;
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.positions-projects-holder {
+    display: table;
+    min-width: 600px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    font-family: 'IBM Plex Sans', serif;
+    color: black;
+    font-size: 12px;
+}
+
+.positions-projects-row {
+    display: table-row;
+}
+
+.positions-projects-logo-row-cell {
+    display: table-cell;
+    width: 33%;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.positions-projects-description {
+    display: table-cell;
+    padding: 10px;
+}
+
+.positions-projects-skills {
+    display: table-cell;
+    padding: 10px;
+    width: 200px;
+}
+
+.positions-projects-logo-sdcloud {
+    background-image: url('../images/web-18.png');
+}
+
+.positions-projects-logo-sdlitica {
+    background-image: url('../images/web-19.png');
+}
+
+.positions-projects-logo-insight {
+    background-image: url('../images/web-20.png');
+}
+
+.projects-positions-link {
+    font-family: 'IBM Plex Sans', serif;
+    color: black;
+    font-size: 22px;
+    margin-top: 20px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.projects-positions-link a {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 760px) {
+    #positions {
+        padding-bottom: 10px;
+    }
+    
+    #positions-container {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+    
+    .positions-container-item-content {        
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-position: left top;
+        padding-left: 40px;
+        padding-top: 60px;
+    }
+    
+    #positions-container-item {
+        display: block;
+        width: 80%;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto; 
+        margin-bottom: 20px;
+    }
+    
+    .fci-bg-engine p {
+        margin-left:20px;
+    }
+}
+
+@media only screen and (max-device-width: 760px) {
+    #positions {
+        padding-bottom: 10px;
+    }
+    
+    #positions-container {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+    
+    #positions-container-item {
+        display: block;
+        width: 90%;
+        position: relative;
+        padding-top: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    
+    .positions-container-item-content {        
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        font-size: 25px;
+        background-position: left top;
+        padding: 50px;
+        padding-top: 120px;
+        font-size: 40px;
+        width: auto;
+        height: auto;
+    }
+    
+    .fci-bg-engine p {
+        margin-left:120px;
+    }
+}

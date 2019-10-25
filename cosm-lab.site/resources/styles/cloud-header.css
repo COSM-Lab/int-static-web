@@ -1,0 +1,198 @@
+header {
+    width:100%; 
+    height: 800px;
+    border-bottom: 2px solid #3F88C5;
+    background-color: #35799E;
+    background-image: url('../images/web-03.png');
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 25%;
+}
+
+#header-content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    min-width: 800px;
+    margin-top: 100px;
+    height: 500px;
+    text-align: center;
+    padding-top: 25px;
+}
+
+#header-content-title {
+    font-family: 'IBM Plex Sans', serif;
+    font-size: 55px;
+    padding-top: 50px;
+    color: black;
+    height: 90px;
+    margin-top: 70px;
+    background-image: url('../images/web-02.png');
+    background-repeat: no-repeat;
+    background-position: 440 0;
+    background-size: 37%;
+}
+
+#header-content-subtitle {
+    font-family: 'IBM Plex Sans', serif;
+    color: blakc;
+    height: 400px;
+    font-size: 55px;
+    margin-top: 5px;
+    background-image: url('../images/web-04.png');
+    background-repeat: no-repeat;
+    background-position: 350 70;
+    background-size: 55%;
+}
+
+#header-mobile-menu-icon {
+    position: absolute;
+    right: 30;
+    top: 30;
+    background-image: url('../images/cloud-burger-menu-icon.png');
+    background-size: contain;
+    width: 80px;
+    height: 80px;
+    display: none;
+}
+
+#header-menu {
+    width: 100%;
+    max-width: 950px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header-menu-logo {
+    width: 90px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('../images/512x512-blog-header.png');
+    float: left;
+}
+
+.header-main-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    float: left;
+    margin-top:50px;
+}
+
+.header-main-menu-item {
+    float: left;
+    margin-left: 5px;
+}
+
+.header-main-menu-item a {
+    display: block;
+    text-align: center;
+    padding: 10px 16px 10px 16px;
+    font-family: 'IBM Plex Sans', serif;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 15px;
+    font-weight: bold;
+    vertical-align: text-bottom;
+}
+
+.header-main-menu-item-text {
+    font-size: 20px;
+}
+
+.header-main-menu-lab-name {
+    font-size: 72px;
+}
+
+.header-main-menu-item a:hover {
+    background-color: #C9DEEF;
+}
+
+.header-main-menu-item-selected {
+    background-color: #C9DEEF;
+    border-radius: 15px;
+}
+
+@media only screen and (max-width: 760px) {
+      .header-main-menu {
+          display: none;
+          position: absolute;
+          right: 30px;
+          top: 100px;
+          width: 250px;
+          height: auto;
+          list-style-type:none;
+          padding: 10px;
+          border-radius: 20px;
+          box-shadow: 4px 6px 20px 2px rgba(0,0,0,0.7);
+      }
+      
+      .header-main-menu-item {
+          display: block;
+          width: 100%;
+      }
+      
+      .header-main-menu-item a {
+          font-size: 25px;
+      }
+      
+      #header-menu-logo {
+          margin-left: auto;
+          margin-right: auto;
+          float: none;
+          width: 160px;
+          height: 90px;
+          margin-top: -20px;
+          background-size: contain;
+      }
+      #header-content {
+          background-position: -650px 0px;
+      }
+      #header-mobile-menu-icon {
+        display: block;
+    }
+}
+
+@media only screen and (max-device-width: 760px) {
+      .header-main-menu {
+          display: none;
+          position: absolute;
+          right: 30px;
+          top: 100px;
+          width: 500px;
+          height: auto;
+          list-style-type:none;
+          padding: 10px;
+          border-radius: 20px;
+          box-shadow: 4px 6px 20px 2px rgba(63,136,197,0.7);
+      }
+      
+      .header-main-menu-item {
+          display: block;
+          width: 100%;
+      }
+      
+      .header-main-menu-item a {
+          font-size: 45px;
+      }
+      
+      #header-menu-logo {
+          margin-left: auto;
+          margin-right: auto;
+          float: none;
+          width: 160px;
+          height: 90px;
+          margin-top: -20px;
+          background-size: contain;
+      }
+      #header-content {
+          background-position: -650px 0px;
+      }
+      #header-mobile-menu-icon {
+        display: block;
+    }
+}

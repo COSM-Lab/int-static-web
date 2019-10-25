@@ -1,0 +1,207 @@
+#topics {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    min-width: 400px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-bottom: 30px;
+}
+
+.topics-section-background {
+    background-image: url('../images/web-26.png'), url('../images/web-27.png');
+    background-repeat: no-repeat;
+    background-position: 50px 50%, right bottom;
+    background-size: 15%, 25%;
+}
+
+#topics-title {
+    text-align: center;
+    font-family: 'IBM Plex Sans', serif;
+    font-weight: bold;
+    font-size: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-image: url('../images/web-12.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 40%;
+}
+
+#topics-memo {
+    text-align: left;
+    font-family: 'IBM Plex Sans', serif;
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#topics-container {
+    padding-top: 10px;
+    font-family: 'Open sans', serif;
+    width: 100%;
+    max-width: 1000px;
+    min-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+}
+
+#topics-container-row {
+    display: table-row;
+    max-width: 1000px;
+    min-width: 400px;
+}
+
+#topics-container-item {
+    display: table-cell;
+    font-family: 'IBM Plex Sans', serif;
+    width: 250px;
+    min-width: 250px;
+    margin-left: 20px;
+    height: 230px;
+    vertical-align: top;
+}
+
+.topics-container-item-spacer {
+    display: table-cell;
+    width: 20px;
+    height: 100%;
+}
+
+.topics-container-item-logo {
+    width: 100%;
+    height: 100px;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+
+.fci-bg-bell-soft p {
+    margin-left: 15px;
+    margin-right: 10px;
+    margin-top: 30px;
+
+}
+
+.fci-logo-bell-soft {
+    background-image: url('../images/web-13.png');
+}
+
+
+
+.fci-bg-t-systems p {
+    margin-left: 15px;
+    margin-right: 10px;
+    margin-top: 30px;
+}
+
+.fci-logo-t-systems {
+    background-image: url('../images/web-14.png');
+}
+
+.fci-bg-insight {
+    background-image: url('../images/web-10.png');
+}
+
+.topics-container-item-content {
+    background-repeat: no-repeat;
+    padding-top: 20px;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 300px;
+}
+
+.topics-positions-link {
+    font-family: 'IBM Plex Sans', serif;
+    font-size: 22px;
+    margin-top: 20px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.topics-positions-link a {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 760px) {
+    #topics {
+        padding-bottom: 10px;
+    }
+    
+    #topics-container {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+    
+    .topics-container-item-content {        
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-position: left top;
+        padding-left: 40px;
+        padding-top: 60px;
+    }
+    
+    #topics-container-item {
+        display: block;
+        width: 80%;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto; 
+        margin-bottom: 20px;
+    }
+    
+    .fci-bg-engine p {
+        margin-left:20px;
+    }
+}
+
+@media only screen and (max-device-width: 760px) {
+    #topics {
+        padding-bottom: 10px;
+    }
+    
+    #topics-container {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+    
+    #topics-container-item {
+        display: block;
+        width: 90%;
+        position: relative;
+        padding-top: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    
+    .topics-container-item-content {        
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        font-size: 25px;
+        background-position: left top;
+        padding: 50px;
+        padding-top: 120px;
+        font-size: 40px;
+        width: auto;
+        height: auto;
+    }
+    
+    .fci-bg-engine p {
+        margin-left:120px;
+    }
+}
