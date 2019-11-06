@@ -1,12 +1,11 @@
 header {
     width:100%; 
-    height: 800px;
-    border-bottom: 2px solid #3F88C5;
-    background-color: #35799E;
+    height: 900px;
+    background-color: #48A1D3;
     background-image: url('../images/web-03.png');
     background-repeat: no-repeat;
     background-position: left bottom;
-    background-size: 25%;
+    background-size: 35%;
 }
 
 #header-content {
@@ -35,7 +34,7 @@ header {
 
 #header-content-subtitle {
     font-family: 'IBM Plex Sans', serif;
-    color: blakc;
+    color: black;
     height: 400px;
     font-size: 55px;
     margin-top: 5px;
@@ -58,8 +57,8 @@ header {
 
 #header-menu {
     width: 100%;
-    max-width: 950px;
-    height: 50px;
+    max-width: 1000px;
+    height: 30px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -77,7 +76,7 @@ header {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    height: 50px;
+    height: 30px;
     float: left;
     margin-top:50px;
 }
@@ -85,13 +84,13 @@ header {
 .header-main-menu-item {
     float: left;
     margin-left: 5px;
+    width: 195px;
 }
 
 .header-main-menu-item a {
     display: block;
     text-align: center;
     padding: 10px 16px 10px 16px;
-    font-family: 'IBM Plex Sans', serif;
     color: white;
     text-decoration: none;
     text-transform: uppercase;
@@ -102,14 +101,19 @@ header {
 
 .header-main-menu-item-text {
     font-size: 20px;
+    margin-top: 30px;
+    font-family: 'IBM Plex Sans', serif;
 }
 
 .header-main-menu-lab-name {
-    font-size: 72px;
+    font-family: 'IBM Plex Sans Condensed';
+    font-size: 50px;
 }
 
 .header-main-menu-item a:hover {
-    background-color: #C9DEEF;
+    background-image: url('../images/obvodka.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 .header-main-menu-item-selected {
