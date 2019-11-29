@@ -2,7 +2,7 @@
 
     <head>
         <title>
-            sdCloud :: Bringing System Dynamics Into Cloud
+            COSM :: Лаборатория Облачных Решений и Моделирования
         </title>
         
         <meta name="viewport" content="user-scalable=no">
@@ -127,25 +127,42 @@
     
     <body>
         <header>
-            <div id="header-menu">
-                <ul id="header-main-menu" class="header-main-menu">
-                    <li class="header-main-menu-item">
-                        <a href="#projects" class="header-main-menu-item-text">проекты</a>
-                    </li>
-                    <li class="header-main-menu-item">
-                        <a href="#partners" class="header-main-menu-item-text">партнёры</a>
-                    </li>
-                    <li class="header-main-menu-item">
-                        <a href="#" class="header-main-menu-lab-name">cosm</a>
-                    </li>
-                    <li class="header-main-menu-item">
-                        <a href="#positions" class="header-main-menu-item-text">вакансии</a>
-                    </li>
-                    <li class="header-main-menu-item">
-                        <a href="#topics" class="header-main-menu-item-text">темы</a>
-                    </li>
-                </ul>
-                
+            <div class="header-menu-holder">
+                <div class="header-lab-logo">
+                    <a href="#" class="header-main-menu-lab-name">cosm</a>
+                </div>
+                <div id="header-menu">
+                    <ul id="header-main-menu" class="header-main-menu">
+                        <li class="header-main-menu-item">
+                            <a href="#topics" class="header-main-menu-item-text">темы</a>
+                        </li>
+                        <li class="header-main-menu-item">
+                            <a href="#positions" class="header-main-menu-item-text">вакансии</a>
+                        </li>
+                        <li class="header-main-menu-item">
+                            <a href="#partners" class="header-main-menu-item-text">партнёры</a>
+                        </li>
+                        <li class="header-main-menu-item">
+                            <a href="#projects" class="header-main-menu-item-text">проекты</a>
+                        </li>
+                        <li class="header-main-menu-item">
+                            <a href="https://learning.cosm-lab.science" target="_blank" class="header-main-menu-item-text">Обучение</a>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+            <div class="header-university-logos-holder">
+                <div class="header-university-logos header-blank-logo">
+                </div>
+                <a href="https://itmo.ru" target="_blank">
+                    <div class="header-university-logos header-itmo-logo">
+                    </div>
+                </a>
+                <a href="https://scs.ifmo.ru/ru/" target="_blank">
+                    <div class="header-university-logos header-faculty-logo">
+                    </div>
+                </a>
             </div>
             
             <div id="header-content">                
@@ -280,69 +297,50 @@
                 
                 <div id="positions-memo">
                     Так как мы разрабатываем крупные проекты с большим количеством пользователей и партнёров, в том числе и из зарубежных ВУЗов, у нас всегда есть много интересных задач, которые помогут изучить новые новые технологии, научиться работать в профессиональной команде, познакомиться с зарубежными коллегами и усилить своё персональное портфолио.<br />
-                    <br />
-                    У каждого из наших проектов своя направленность и стек используемых технологий. Коротко каждый из наших проектов можно охарактироззовать так:
                 </div>
                 
                 <div class="positions-projects-holder">
                     <div class="positions-projects-row">
-                        <div class="positions-projects-logo-row-cell"></div>
-                        <div class="positions-projects-logo-row-cell positions-projects-logo-sdcloud"></div>
-                        <div class="positions-projects-logo-row-cell"></div>
-                    </div>
-                </div>
-                <div class="positions-projects-holder">
-                    <div class="positions-projects-row">
-                        <div class="positions-projects-description">
-                            Основная цель проекта - предоставить исследователям и студентам удобный инструмент для работы с системно-динамическими моделями. Поэтому главным фокусом в этом проекте является повышения эффективности вычислений и расширение инструментов работы с моделями. В проекте много задач связанных с оптимизацией исполения моделей, параллельными вычислениями, а также проведением расчётов на разных аппаратных архитектурах. В распоряжении проекта есть лаборатория с привычными серверами, GPU, сервера с архитектурой SPARC и даже отечественный сервер Эльбрус.
+                        <div class="positions-projects-logo-row-cell positions-projects-logo positions-projects-logo-sdcloud"></div>
+                        <div class="positions-projects-logo-row-cell positions-projects-description">
+                            Платформа sdCloud представляет из себя облачный сервис для расчёта моделей, поэтому основные задачи относятся к облсти разраюотки инфраструктуры для облачного решение, эффективности проведения вычслений, параллельных вычислений и анализа данных.
                         </div>
-                        <div class="positions-projects-skills">
+                        <div class="positions-projects-logo-row-cell positions-projects-skills">
+                            <b><u>Стек технологий:</u></b><br />
+                            <u>Back-end:</u> C#, Python, Bash<br />
+                            <u>Front-end:</u> JavaScript, ReactJS<br />
+                        </div>
+                    </div>
+                    <div class="positions-projects-row">
+                        <div class="positions-projects-logo-row-cell positions-projects-logo positions-projects-logo-sdlitica"></div>
+                        <div class="positions-projects-logo-row-cell positions-projects-description">
+                            Решение sdLitica, как и платформа sdCloud представляет из себя облачный сервис, поэтому тут также необходимо решать различные вопросы связанные с таким окружением. Основная цель проекта - эффективный анализ временных рядов в больших обхёмак, поэтому участникамприходится решать широкий спектр задач по разработке различных инструментов и аппаратных решений, которые позволят сделать такой анализ доступным для широкого круга пользователей.
+                        </div>
+                        <div class="positions-projects-logo-row-cell positions-projects-skills">
+                            <b><u>Стек технологий:</u></b><br />
+                            <u>Back-end:</u> C#, Python, Bash<br />
+                            <u>Front-end:</u> JavaScript, ReactJS<br />
+                        </div>
+                    </div>
+                    <div class="positions-projects-row">
+                        <div class="positions-projects-logo-row-cell positions-projects-logo positions-projects-logo-insight"></div>
+                        <div class="positions-projects-logo-row-cell positions-projects-description">
+                            Проект InsightProject специализируется на сборе, анализе и представлении широкого спекта гетерогенных данных, поэтому его участникам приходся активно работать над механизмами получения информации из различных систем, анализу и обработке этих данных, а также представлению данных конечным пользователям.
+                        </div>
+                        <div class="positions-projects-logo-row-cell positions-projects-skills">
                             <b><u>Стек технологий:</u></b><br />
                             <u>Back-end:</u> C#, Python, Bash<br />
                             <u>Front-end:</u> JavaScript, ReactJS<br />
                         </div>
                     </div>
                 </div>
-                <div class="positions-projects-holder">
-                    <div class="positions-projects-row">
-                        <div class="positions-projects-logo-row-cell"></div>
-                        <div class="positions-projects-logo-row-cell positions-projects-logo-sdlitica"></div>
-                        <div class="positions-projects-logo-row-cell"></div>
-                    </div>
-                </div>
-                <div class="positions-projects-holder">
-                    <div class="positions-projects-row">
-                        <div class="positions-projects-description">
-                            Главная задача этого проекта - разработка высокоэффективной платформы для анализа временных рядов в очень больших объёмах. Как в проекте sdCloud перед проектом sdLitica стоят вопросы эффективности вычислений и обработки больших объёмов данных.
-                        </div>
-                        <div class="positions-projects-skills">
-                            <b><u>Стек технологий:</u></b><br />
-                            <u>Back-end:</u> C#, Python, Bash<br />
-                            <u>Front-end:</u> JavaScript, ReactJS<br />
-                        </div>
-                    </div>
-                </div>
-                <div class="positions-projects-holder">
-                    <div class="positions-projects-row">
-                        <div class="positions-projects-logo-row-cell"></div>
-                        <div class="positions-projects-logo-row-cell positions-projects-logo-insight"></div>
-                        <div class="positions-projects-logo-row-cell"></div>
-                    </div>
-                </div>
-                <div class="positions-projects-holder">
-                    <div class="positions-projects-row">
-                        <div class="positions-projects-description">
-                            Цель этого проекта - сбор обработка и предоставление сквозного связанного доступа ковсему многообразию данных описывающих процесс разработки программного обеспечения, включая задачи,
-                        </div>
-                        <div class="positions-projects-skills">
-                            <b><u>Стек технологий:</u></b><br />
-                            <u>Back-end:</u> C#, Python, Bash<br />
-                            <u>Front-end:</u> JavaScript, ReactJS<br />
-                        </div>
-                    </div>
-                </div>
+                
+                
+                
                 <div class="projects-positions-link">
-                    <a href="#">Здесь</a> вы можете ознакомиться с полным перечнем позиций которые открыты в наших проектах.
+                    <a href="#">
+                        Больше вакансий
+                    </a>
                 </div>
             </div>
         </div>
@@ -354,15 +352,71 @@
                 </div>
                 
                 <div id="topics-memo">
-                Повышение эффективности вычислений, параллельные вычисления и работа с широким спектром аппаратных архитектур на няду с обработкой больших объёмов данных, как гетерогенных, так и представленных в виден time-series, являются ключевыми направленияим в рамках которых проводятся работы в нашей лаборатории.<br />
-                <br />
-                Однако, перечень тем для исследований не ограничивается только нашими собственными прекотами. Работая с нашими индустриальными партнёрами мы на регулярной основе проводим исследования для них на платной основе, что позволяет студентам не только получить нвыки в области проведения исследований и представления своих результатов, но и монетизировать затраченные усилия, а также проявить себя перед понетнциальными работодателями.<br />
-                <br />
+                    Предлагаемые темы могут быть использованы в качестве тем бакалаврских или магистерских диссертаций. Также их можно использовать для прохождения практики. Работа над всеми темами подразумевает работу с командами соответствующих проектов и рассчитана на 10-15 рабочих часов в неделю<br />
+                    <br />
+                </div>
+
+                <!-- Table with sample research topics -->
+                <div class="topics-list-table">
+                    <div class="topics-list-row">
+                        <!-- related project icon -->
+                        <div class="topics-list-row-cell topic-icon-cell topic-icon-cell-sdcloud">
+                        </div>
+                        <!-- topic code -->
+                        <div class="topics-list-row-cell topic-code-cell">
+                        SDC-01
+                        </div>
+                        <!-- topic title -->
+                        <div class="topics-list-row-cell topic-title-cell">
+                        Разработка механизма расчёта системно-динамических моделей на GPU
+                        </div>
+                        <!-- topic summary -->
+                        <div class="topics-list-row-cell topic-summary-cell">
+                        В рамках этой темы необходимо исследовать существующие методы генерации исполняемого кода (генерируется код на Python и C) и разработать систему трансляции описания системно-динамических моделей в код для GPU (например CUDA)
+                        </div>
+                    </div>
+                    <div class="topics-list-row">
+                        <!-- related project icon -->
+                        <div class="topics-list-row-cell topic-icon-cell topic-icon-cell-sdlitica">
+                        </div>
+                        <!-- topic code -->
+                        <div class="topics-list-row-cell topic-code-cell">
+                        SDL-02
+                        </div>
+                        <!-- topic title -->
+                        <div class="topics-list-row-cell topic-title-cell">
+                        Исследование методов машинного обучшения для работы с временными рядами. Решение задач поиска корреляций, выявление аномалий и предсказания дальнейшего поведения
+                        </div>
+                        <!-- topic summary -->
+                        <div class="topics-list-row-cell topic-summary-cell">
+                        Зачастую, особенно при проведении различных наблюдений, собираемые данные очень сложно систематизировать и выявить формальные зависимости. В такие моменты приходят на помощь методы и практики машинного обучшения. В рамках этой задачи необходимо исследовать доступные механизмы, реализовать их и интегрировать в облачную платформу sdLitica. Проект разрабатывается совместно с Университетами Thapar (Индия) и Unisinos (Бразилия).
+
+                        </div>
+                    </div>
+                    <div class="topics-list-row">
+                        <!-- related project icon -->
+                        <div class="topics-list-row-cell topic-icon-cell topic-icon-cell-insight">
+                        </div>
+                        <!-- topic code -->
+                        <div class="topics-list-row-cell topic-code-cell">
+                        IPR-01
+                        </div>
+                        <!-- topic title -->
+                        <div class="topics-list-row-cell topic-title-cell">
+                        Разработчик механизмов выгрузки данных из инструментов поддержки процесса разработки
+                        </div>
+                        <!-- topic summary -->
+                        <div class="topics-list-row-cell topic-summary-cell">
+                        Целью проекта InsightProject является агрегация и анализ широкого спектра данных, выгружаемых из различных инструментов поддержки процесса разработки ПО. К таким инструментам относятся менеджеры задач (Mantis, Jira, GitHub issues), системы версионного контроля, системы непрерывной интеграции и инструменты по работе с документацией. Для работы с каждым инструментом, зачастую необходимо разрабатывать уникальный компонент, понимающий определённый протокол.
+                        </div>
+                    </div>
+                </div>
                 
                 <div class="topics-positions-link">
-                    <a href="#">Здесь</a> вы можете ознакомиться с полным перечнем актуальных тем для проведения исследований.
+                    <a href="#">
+                        Больше тем
+                    </a>
                 </div>
-            </div>
             </div>
         </div>
        

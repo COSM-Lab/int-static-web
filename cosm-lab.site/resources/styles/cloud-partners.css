@@ -1,7 +1,7 @@
 #partners {
     margin-left: auto;
     margin-right: auto;
-    max-width: 1000px;
+    max-width: 1100px;
     min-width: 400px;
     background-image: url('../images/cloud_partners_background.png');
     background-repeat: no-repeat;
@@ -17,17 +17,16 @@
 }
 
 #partners-title {
-    text-align: center;
     font-family: 'IBM Plex Sans', serif;
     font-weight: bold;
     color: black;
     font-size: 50px;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     background-image: url('../images/web-12.png');
     background-repeat: no-repeat;
-    background-position: center bottom;
-    background-size: 40%;
+    background-position: left bottom;
+    background-size: 30%;
 }
 
 #partners-memo {
@@ -45,7 +44,7 @@
     padding-top: 10px;
     font-family: 'Open sans', serif;
     width: 100%;
-    max-width: 1000px;
+    max-width: 1100px;
     min-width: 400px;
     margin-left: auto;
     margin-right: auto;
@@ -85,7 +84,6 @@
 
 
 .fci-bg-bell-soft p {
-    margin-left: 15px;
     margin-right: 10px;
     margin-top: 30px;
 
@@ -98,8 +96,6 @@
 
 
 .fci-bg-t-systems p {
-    margin-left: 15px;
-    margin-right: 10px;
     margin-top: 30px;
 }
 

@@ -1,7 +1,7 @@
 #topics {
     margin-left: auto;
     margin-right: auto;
-    max-width: 800px;
+    max-width: 1100px;
     min-width: 400px;
     background-repeat: no-repeat;
     background-size: contain;
@@ -12,11 +12,11 @@
     background-image: url('../images/web-26.png'), url('../images/web-27.png');
     background-repeat: no-repeat;
     background-position: 50px 50%, right bottom;
-    background-size: 15%, 25%;
+    background-size: 13%, 22%;
 }
 
 #topics-title {
-    text-align: center;
+    text-align: left;
     font-family: 'IBM Plex Sans', serif;
     font-weight: bold;
     font-size: 50px;
@@ -24,7 +24,7 @@
     padding-bottom: 30px;
     background-image: url('../images/web-12.png');
     background-repeat: no-repeat;
-    background-position: center bottom;
+    background-position: 70px bottom;
     background-size: 40%;
 }
 
@@ -79,29 +79,6 @@
 
 
 
-.fci-bg-bell-soft p {
-    margin-left: 15px;
-    margin-right: 10px;
-    margin-top: 30px;
-
-}
-
-.fci-logo-bell-soft {
-    background-image: url('../images/web-13.png');
-}
-
-
-
-.fci-bg-t-systems p {
-    margin-left: 15px;
-    margin-right: 10px;
-    margin-top: 30px;
-}
-
-.fci-logo-t-systems {
-    background-image: url('../images/web-14.png');
-}
-
 .fci-bg-insight {
     background-image: url('../images/web-10.png');
 }
@@ -116,15 +93,79 @@
 
 .topics-positions-link {
     font-family: 'IBM Plex Sans', serif;
+    color: black;
     font-size: 22px;
     margin-top: 20px;
-    width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 1100px;
+    text-align: right;
+    
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 80px;
+    background-image: url('../images/web-more-arrow.JPG');
+    
+    
 }
 
 .topics-positions-link a {
     text-decoration: none;
+    color: white;
+    margin-right: 100px;
+}
+
+/*
+    Table with sample topics for our projects
+*/
+.topics-list-table {
+    width: 100%;
+    display: table;
+    font-family: 'IBM Plex Sans', serif;
+    color: black;
+    font-size: 18px;
+}
+
+.topics-list-row {
+    display: table-row;
+    margin-bottom: 10px;
+}
+
+.topics-list-row-cell {
+    display: table-cell;
+    padding: 10px;
+}
+
+.topic-icon-cell {
+    width: 90px;
+    background-size: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.topic-icon-cell-sdcloud {
+    background-image: url('../images/web-18.png');
+}
+
+.topic-icon-cell-sdlitica {
+    background-image: url('../images/web-19.png');
+}
+
+.topic-icon-cell-insight {
+    background-image: url('../images/web-20.png');
+}
+
+.topic-code-cell {
+    width: 100px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.topic-title-cell {
+    width: 200px;
+}
+
+.topic-summary-cell {
+
 }
 
 @media only screen and (max-width: 760px) {

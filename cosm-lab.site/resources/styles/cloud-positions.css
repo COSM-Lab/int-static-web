@@ -1,7 +1,7 @@
 #positions {
     margin-left: auto;
     margin-right: auto;
-    max-width: 800px;
+    max-width: 1100px;
     min-width: 400px;
     background-repeat: no-repeat;
     background-size: contain;
@@ -16,7 +16,6 @@
 }
 
 #positions-title {
-    text-align: center;
     font-family: 'IBM Plex Sans', serif;
     font-weight: bold;
     color: black;
@@ -41,13 +40,13 @@
 .positions-projects-holder {
     display: table;
     min-width: 600px;
-    max-width: 1000px;
+    max-width: 1100px;
     margin-left: auto;
     margin-right: auto;
     
     font-family: 'IBM Plex Sans', serif;
     color: black;
-    font-size: 12px;
+    font-size: 18px;
 }
 
 .positions-projects-row {
@@ -55,23 +54,26 @@
 }
 
 .positions-projects-logo-row-cell {
-    display: table-cell;
-    width: 33%;
-    height: 100px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+    display: table-cell;    
 }
 
 .positions-projects-description {
     display: table-cell;
     padding: 10px;
+    
 }
 
 .positions-projects-skills {
     display: table-cell;
     padding: 10px;
-    width: 200px;
+    width:  250px;
+}
+
+.positions-projects-logo {
+    width: 150px;
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: center;
 }
 
 .positions-projects-logo-sdcloud {
@@ -91,13 +93,21 @@
     color: black;
     font-size: 22px;
     margin-top: 20px;
-    width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 1100px;
+    text-align: right;
+    
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 80px;
+    background-image: url('../images/web-more-arrow.JPG');
+    
+    
 }
 
 .projects-positions-link a {
     text-decoration: none;
+    color: black;
+    margin-right: 100px;
 }
 
 @media only screen and (max-width: 760px) {
