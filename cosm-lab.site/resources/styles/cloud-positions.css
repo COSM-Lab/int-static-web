@@ -9,9 +9,9 @@
 }
 
 .positions-section-background {
-    background-image: url('../images/web-21.png'), url('../images/web-22.png');
+    background-image: url('../images/web-21.png');
     background-repeat: no-repeat;
-    background-position: left bottom, right bottom;
+    background-position: left bottom;
     background-size: 25%;
 }
 
@@ -98,8 +98,8 @@
     
     background-position: right center;
     background-repeat: no-repeat;
-    background-size: 80px;
-    background-image: url('../images/web-more-arrow.JPG');
+    background-size: contain;
+    background-image: url('../images/web-arrow-blue.png');
     
     
 }

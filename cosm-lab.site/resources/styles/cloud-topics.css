@@ -11,26 +11,23 @@
 .topics-section-background {
     background-image: url('../images/web-26.png'), url('../images/web-27.png');
     background-repeat: no-repeat;
-    background-position: 50px 50%, right bottom;
+    background-position: right 50%, left bottom;
     background-size: 13%, 22%;
 }
 
 #topics-title {
     text-align: left;
     font-family: 'IBM Plex Sans', serif;
+    color: black;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 45px;
     padding-top: 30px;
-    padding-bottom: 30px;
-    background-image: url('../images/web-12.png');
-    background-repeat: no-repeat;
-    background-position: 70px bottom;
-    background-size: 40%;
 }
 
 #topics-memo {
     text-align: left;
     font-family: 'IBM Plex Sans', serif;
+    color: black;
     font-size: 20px;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -101,8 +98,8 @@
     
     background-position: right center;
     background-repeat: no-repeat;
-    background-size: 80px;
-    background-image: url('../images/web-more-arrow.JPG');
+    background-size: contain;
+    background-image: url('../images/web-arrow-white.png');
     
     
 }
@@ -120,7 +117,7 @@
     width: 100%;
     display: table;
     font-family: 'IBM Plex Sans', serif;
-    color: black;
+    color: white;
     font-size: 18px;
 }
 
@@ -143,15 +140,15 @@
 }
 
 .topic-icon-cell-sdcloud {
-    background-image: url('../images/web-18.png');
+    background-image: url('../images/web-18-i.png');
 }
 
 .topic-icon-cell-sdlitica {
-    background-image: url('../images/web-19.png');
+    background-image: url('../images/web-19-i.png');
 }
 
 .topic-icon-cell-insight {
-    background-image: url('../images/web-20.png');
+    background-image: url('../images/web-20-i.png');
 }
 
 .topic-code-cell {

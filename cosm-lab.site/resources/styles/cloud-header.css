@@ -22,14 +22,14 @@ header {
 #header-content-title {
     font-family: 'IBM Plex Sans', serif;
     font-size: 45px;
-    padding-top: 45px;
+    padding-top: 65px;
     padding-right: 20px;
     color: black;
-    height: 90px;
+    height: 70px;
     margin-top: 40px;
     background-image: url('../images/web-02.png');
     background-repeat: no-repeat;
-    background-position: 855 0;
+    background-position: 855 15;
     background-size: 22%;
     text-align: right;
 }
@@ -39,7 +39,6 @@ header {
     color: black;
     height: 400px;
     font-size: 45px;
-    margin-top: 5px;
     text-align: right;
     padding-right: 20px;
     background-image: url('../images/web-04.png');
