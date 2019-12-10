@@ -95,19 +95,15 @@
     margin-top: 20px;
     width: 1100px;
     text-align: right;
-    
-    background-position: right center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-image: url('../images/web-arrow-white.png');
-    
-    
 }
 
 .topics-positions-link a {
     text-decoration: none;
     color: white;
-    margin-right: 100px;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('../images/web-arrow-white.png');
 }
 
 /*
@@ -158,11 +154,11 @@
 }
 
 .topic-title-cell {
-    width: 200px;
+    width: 300px;
 }
 
 .topic-summary-cell {
-
+    font-size: 14px;
 }
 
 @media only screen and (max-width: 760px) {

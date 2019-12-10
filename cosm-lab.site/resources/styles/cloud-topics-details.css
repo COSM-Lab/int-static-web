@@ -60,11 +60,13 @@
 .td-project-item-logo-sdlitica {
     background-image: url('../images/web-06.png');
     background-size: 75%;
+    opacity: 0.3;
 }
 
 .td-project-item-logo-insight {
     background-image: url('../images/web-07.png');
     background-size: 85%;
+    opacity: 0.3;
 }
 
 

@@ -1,6 +1,7 @@
 footer {
     max-width: 100%; 
     background-color: #48A1D3;
+    position: absolute;
     right: 0;
     bottom: 0;
     left: 0;

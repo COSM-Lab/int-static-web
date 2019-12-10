@@ -95,274 +95,281 @@
                 $("#td-sdcloud").css('display', 'none');
                 $("#td-sdlitica").css('display', 'none');
                 $("#td-insight").css('display', 'none');
+                
+                $(".td-project-item-logo").css('opacity', '0.3');
             }
             
             function show_sdCloud() {
                 hideAllTabs();
                 $("#td-sdcloud").css('display', 'table');
+                $(".td-project-item-logo-sdcloud").css('opacity', '1.0');
             }
             
             function show_sdLitica() {
                 hideAllTabs();
                 $("#td-sdlitica").css('display', 'table');
+                $(".td-project-item-logo-sdlitica").css('opacity', '1.0');
             }
             
             function show_insight() {
                 hideAllTabs();
                 $("#td-insight").css('display', 'table');
+                $(".td-project-item-logo-insight").css('opacity', '1.0');
             }
         </script>
     </head>
     
     <body>
-        <header class="header-without-wallpaper">
-            <div class="header-menu-holder">
-                <div class="header-lab-logo">
-                    <a href="#" class="header-main-menu-lab-name">cosm</a>
-                </div>
-                <div id="header-menu">
-                    <ul id="header-main-menu" class="header-main-menu">
-                        <li class="header-main-menu-item">
-                            <a href="index.html" class="header-main-menu-item-text">темы</a>
-                        </li>
-                        <li class="header-main-menu-item">
-                            <a href="index.html" class="header-main-menu-item-text">вакансии</a>
-                        </li>
-                        <li class="header-main-menu-item">
-                            <a href="index.html" class="header-main-menu-item-text">партнёры</a>
-                        </li>
-                        <li class="header-main-menu-item">
-                            <a href="index.html" class="header-main-menu-item-text">проекты</a>
-                        </li>
-                        <li class="header-main-menu-item">
-                            <a href="https://learning.cosm-lab.science" target="_blank" class="header-main-menu-item-text">Обучение</a>
-                        </li>
-                    </ul>
+        <div id="page-container">
+            <div id="content-wrap">
+                <header class="header-without-wallpaper">
+                    <div class="header-menu-holder">
+                        <div class="header-lab-logo">
+                            <a href="#" class="header-main-menu-lab-name">cosm</a>
+                        </div>
+                        <div id="header-menu">
+                            <ul id="header-main-menu" class="header-main-menu">
+                                <li class="header-main-menu-item">
+                                    <a href="index.html" class="header-main-menu-item-text">темы</a>
+                                </li>
+                                <li class="header-main-menu-item">
+                                    <a href="index.html" class="header-main-menu-item-text">вакансии</a>
+                                </li>
+                                <li class="header-main-menu-item">
+                                    <a href="index.html" class="header-main-menu-item-text">партнёры</a>
+                                </li>
+                                <li class="header-main-menu-item">
+                                    <a href="index.html" class="header-main-menu-item-text">проекты</a>
+                                </li>
+                                <li class="header-main-menu-item">
+                                    <a href="https://learning.cosm-lab.science" target="_blank" class="header-main-menu-item-text">Обучение</a>
+                                </li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                    <div class="header-university-logos-holder">
+                        <div class="header-university-logos header-blank-logo">
+                        </div>
+                        <a href="https://itmo.ru" target="_blank">
+                            <div class="header-university-logos header-itmo-logo">
+                            </div>
+                        </a>
+                        <a href="https://scs.ifmo.ru/ru/" target="_blank">
+                            <div class="header-university-logos header-faculty-logo">
+                            </div>
+                        </a>
+                    </div>
                     
+                </header>
+                
+                
+                <div id="topics-details" class="white-section">
+                
+                    <!-- Main page table -->
+                    <div class="td-holder">
+                        <!-- Left column with content -->
+                        <div class="td-content">
+                            <div id="td-title">
+                                Темы исследований
+                            </div>
+                            <div id="td-memo">
+                                Предлагаемые темы могут быть использованы в качестве тем бакалаврских или магистерских диссертаций. Также их можно использовать для прохождения практики. Работа над всеми темами подразумевает работу с командами соответствующих проектов и рассчитана на 10-15 рабочих часов в неделю
+                            </div>
+                            
+                            <!-- Tabs with project logos -->
+                            <div class="td-project-item-logo td-project-item-logo-sdcloud">
+                            </div>
+                            <div class="td-project-item-logo td-project-item-logo-sdlitica">
+                            </div>
+                            <div class="td-project-item-logo td-project-item-logo-insight">
+                            </div>
+                            
+                            <!-- Positions content -->
+                            <div id="td-sdcloud" class="td-items">
+                                <div class="td-items-row">
+                                    <div class="td-items-id">
+                                    <b>SDC_01</b>
+                                    </div>
+                                    <div class="td-items-summary">
+                                    Разработка механизма расчёта системно-динамических моделей на GPU
+                                    </div>
+                                    <div class="td-itemsdescription">
+                                    В рамках этой темы необходимо исследовать существующие методы генерации исполняемого кода (генерируется код на Python и C) и разработать систему трансляции описания системно-динамических моделей в код для GPU (например CUDA)
+                                    </div>
+                                </div>
+                                
+                                <div class="td-items-row">
+                                    <div class="td-items-id">
+                                    <b>SDC_02</b>
+                                    </div>
+                                    <div class="td-items-summary">
+                                    Адаптация механизмов расчёта системно-динамических моделей для запуска на серверах Эльбрус
+                                    </div>
+                                    <div class="td-itemsdescription">
+                                    Целью данной темы является интеграция серверов Эльбрус в экосистему облака sdCloud. Отечественные сервера Эльбрус с архитектурой VLIW обладают очень высокой эффективностью для решения математических задач. В распоряжении лаборатории есть одна из топовых моделей Эльбрус 4.4 для работы над этой темой. Разработчики системы готовы оказать помощь в этой работе и охотно отвечают на наши вопросы.
+                                    </div>
+                                </div>
+                                
+                                <div class="td-items-row">
+                                    <div class="td-items-id">
+                                    <b>SDC_03</b>
+                                    </div>
+                                    <div class="td-items-summary">
+                                    Расширение системы сертификационного тестирования OpenSource решений для работы с системно-динамическими моделями 
+                                    </div>
+                                    <div class="td-itemsdescription">
+                                    Проект sdCloud, являясь одним из крупнейших OpenSource проектов в области системной динамики, с недавних пор стал выполнять функции централизованного сертификационного центра для свободных решений, применяемых в области системной динамики. В рамках этой темы необходимо поддерживать и расширять методы верификации различных решений и интегрировать новые решения в сертификационный цикл. 
+                                    </div>
+                                </div>
+                                
+                                <div class="td-items-row">
+                                    <div class="td-items-id">
+                                    <b>SDC_04</b>
+                                    </div>
+                                    <div class="td-items-summary">
+                                    Позиция C# разработчика в Core команде проекта sdCloud
+                                    </div>
+                                    <div class="td-itemsdescription">
+                                    Так как проект sdCloud является крупным международным исследовательским проектом, то перед ним всё время встают новые задачи. Приходят новые требования или возникает необходимость решения существующих проблем. В рамках этой позиции можно стать полноценным членом нашей международной команды и получить опыт работы в распределённой продуктовой команде. 
+                                    </div>
+                                </div>
+                                
+                                <div class="td-items-row">
+                                    <div class="td-items-id">
+                                    <b>SDC_05</b>
+                                    </div>
+                                    <div class="td-items-summary">
+                                    Позиция React/JS разработчика в проекте sdCloud 
+                                    </div>
+                                    <div class="td-itemsdescription">
+                                    Наше Web приложение – это то с чем взаимодействую все наши пользователи. Поэтому мы уделяем особое внимание его качеству, удобству и надёжности. Так как область моделирования имеет свою специфику, разработка интерфейса для нашего решения зачастую требует решения достаточно интересных задач.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                            <div id="td-sdlitica" class="td-items">
+                                <div class="td-items-row">
+                                    <div class="td-items-id">
+                                    <b>SDL_01</b>
+                                    </div>
+                                    <div class="td-items-summary">
+                                    Разработка алгоритмов обработки временных рядов и интеграция их в платформу sdLitica
+                                    </div>
+                                    <div class="td-itemsdescription">
+                                    В настоящее время, существует широкий спектр формальных математических методов для обработки данных в формате временных рядов. Такой формат данных становится очень популярен так как он не только активно используется для решения научных задач (результаты моделирования или наблюдений различных экспериментов), но и в современной индустрии, так как подавляющее большинство современных IoT систем производят данные именно такого типа. Для того чтобы превратить большие объёмы данных в полезную информацию необходимо обработать и проанализировать их. Для этого существует широкий спектр математических инструментов, которые нужно реализовать и интегрировать в это решение, чтобы сделать работу с такими данными простой и удобной для всех. Проект разрабатывается совместно с Университетами Thapar (Индия) и Unisinos (Бразилия). 
+                                    </div>
+                                </div>
+                                
+                                <div class="td-items-row">
+                                    <div class="td-items-id">
+                                    <b>SDL_02</b>
+                                    </div>
+                                    <div class="td-items-summary">
+                                    Исследование методов машинного обучшения для работы с временными рядами. Решение задач поиска корреляций, выявление аномалий и предсказания дальнейшего поведения
+                                    </div>
+                                    <div class="td-itemsdescription">
+                                    Зачастую, особенно при проведении различных наблюдений, собираемые данные очень сложно систематизировать и выявить формальные зависимости. В такие моменты приходят на помощь методы и практики машинного обучшения. В рамках этой задачи необходимо исследовать доступные механизмы, реализовать их и интегрировать в облачную платформу sdLitica Проект разрабатывается совместно с Университетами Thapar (Индия) и Unisinos (Бразилия). 
+                                    </div>
+                                </div>
+                                
+                                <div class="td-items-row">
+                                    <div class="td-items-id">
+                                    <b>SDL_03</b>
+                                    </div>
+                                    <div class="td-items-summary">
+                                    React/JS разработчик для платформы sdLitica
+                                    </div>
+                                    <div class="td-itemsdescription">
+                                    Разработка Web интерфейса для приложения, работающего с большими данными – это всегда непростая задача, требующая решения целого ряда нетривиальных подзадач. Для проекта sdLitica необходимо разработать такой Web интерфейс с нуля проведя его проектирование и непосредственную разработку.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div id="td-insight" class="td-items">
+                                <div class="td-items-row">
+                                    <div class="td-items-id">
+                                    <b>IPR_01</b>
+                                    </div>
+                                    <div class="td-items-summary">
+                                    Разработчик механизмов выгрузки данных из инструментов поддержки процесса разработки
+                                    </div>
+                                    <div class="td-itemsdescription">
+                                    Целью проекта InsightProject является агрегация и анализ широкого спектра данных, выгружаемых из различных инструментов поддержки процесса разработки ПО. К таким инструментам относятся менеджеры задач (Mantis, Jira, GitHub issues), системы версионного контроля, системы непрерывной интеграции и инструменты по работе с документацией. Для работы с каждым инструментом, зачастую необходимо разрабатывать уникальный компонент, понимающий определённый протокол. 
+                                    </div>
+                                </div>
+                                
+                                <div class="td-items-row">
+                                    <div class="td-items-id">
+                                    <b>IPR_02</b>
+                                    </div>
+                                    <div class="td-items-summary">
+                                    Применение методов машинного обучения и искуственного интеллекта для анализа данных и метрик описывающих процесс разработки ПО 
+                                    </div>
+                                    <div class="td-itemsdescription">
+                                    После того как данные собраны и накоплены, мы можем провести сквозной анализ и связать вместе все загруженные сущности, чтобы получить целостное представление о рассматриваемом проекте. Так как работать приходится в большинстве случаев с гетерогенными и плохо структурированными данными, современные методы обработки могут показать хорошие результаты. 
+                                    </div>
+                                </div>
+                                
+                                <div class="td-items-row">
+                                    <div class="td-items-id">
+                                    <b>IPR_03</b>
+                                    </div>
+                                    <div class="td-items-summary">
+                                    Разработчик React/JS
+                                    </div>
+                                    <div class="td-itemsdescription">
+                                    В проектах, посвящённых обработке и систематизации больших объёмов разрозненных данных, важная роль отводится доступу к данным и грамотной визуализации. Это непростая, но интересная задача, которую необходимо решить для успеха всего проекта. 
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                        <!-- Left column with content -->
+                        <div class="td-contacts">
+                            <br />
+                            <br />
+                            <br />
+                            <div class="td-contacts-envelope">
+                            </div>
+                            <div class="td-contacts-memo">
+                            Адрес для резюме<br />
+                            <b>joinus@cosm-lab.science</b>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+     
             </div>
-            <div class="header-university-logos-holder">
-                <div class="header-university-logos header-blank-logo">
-                </div>
-                <a href="https://itmo.ru" target="_blank">
-                    <div class="header-university-logos header-itmo-logo">
-                    </div>
-                </a>
-                <a href="https://scs.ifmo.ru/ru/" target="_blank">
-                    <div class="header-university-logos header-faculty-logo">
-                    </div>
-                </a>
-            </div>
-            
-        </header>
-        
-        
-        <div id="topics-details" class="white-section">
-        
-            <!-- Main page table -->
-            <div class="td-holder">
-                <!-- Left column with content -->
-                <div class="td-content">
-                    <div id="td-title">
-                        Темы исследований
-                    </div>
-                    <div id="td-memo">
-                        Предлагаемые темы могут быть использованы в качестве тем бакалаврских или магистерских диссертаций. Также их можно использовать для прохождения практики. Работа над всеми темами подразумевает работу с командами соответствующих проектов и рассчитана на 10-15 рабочих часов в неделю
-                    </div>
-                    
-                    <!-- Tabs with project logos -->
-                    <div class="td-project-item-logo td-project-item-logo-sdcloud">
-                    </div>
-                    <div class="td-project-item-logo td-project-item-logo-sdlitica">
-                    </div>
-                    <div class="td-project-item-logo td-project-item-logo-insight">
-                    </div>
-                    
-                    <!-- Positions content -->
-                    <div id="td-sdcloud" class="td-items">
-                        <div class="td-items-row">
-                            <div class="td-items-id">
-                            <b>SDC_01</b>
-                            </div>
-                            <div class="td-items-summary">
-                            Разработка механизма расчёта системно-динамических моделей на GPU
-                            </div>
-                            <div class="td-itemsdescription">
-                            В рамках этой темы необходимо исследовать существующие методы генерации исполняемого кода (генерируется код на Python и C) и разработать систему трансляции описания системно-динамических моделей в код для GPU (например CUDA)
-                            </div>
-                        </div>
-                        
-                        <div class="td-items-row">
-                            <div class="td-items-id">
-                            <b>SDC_02</b>
-                            </div>
-                            <div class="td-items-summary">
-                            Адаптация механизмов расчёта системно-динамических моделей для запуска на серверах Эльбрус
-                            </div>
-                            <div class="td-itemsdescription">
-                            Целью данной темы является интеграция серверов Эльбрус в экосистему облака sdCloud. Отечественные сервера Эльбрус с архитектурой VLIW обладают очень высокой эффективностью для решения математических задач. В распоряжении лаборатории есть одна из топовых моделей Эльбрус 4.4 для работы над этой темой. Разработчики системы готовы оказать помощь в этой работе и охотно отвечают на наши вопросы.
-                            </div>
-                        </div>
-                        
-                        <div class="td-items-row">
-                            <div class="td-items-id">
-                            <b>SDC_03</b>
-                            </div>
-                            <div class="td-items-summary">
-                            Расширение системы сертификационного тестирования OpenSource решений для работы с системно-динамическими моделями 
-                            </div>
-                            <div class="td-itemsdescription">
-                            Проект sdCloud, являясь одним из крупнейших OpenSource проектов в области системной динамики, с недавних пор стал выполнять функции централизованного сертификационного центра для свободных решений, применяемых в области системной динамики. В рамках этой темы необходимо поддерживать и расширять методы верификации различных решений и интегрировать новые решения в сертификационный цикл. 
-                            </div>
-                        </div>
-                        
-                        <div class="td-items-row">
-                            <div class="td-items-id">
-                            <b>SDC_04</b>
-                            </div>
-                            <div class="td-items-summary">
-                            Позиция C# разработчика в Core команде проекта sdCloud
-                            </div>
-                            <div class="td-itemsdescription">
-                            Так как проект sdCloud является крупным международным исследовательским проектом, то перед ним всё время встают новые задачи. Приходят новые требования или возникает необходимость решения существующих проблем. В рамках этой позиции можно стать полноценным членом нашей международной команды и получить опыт работы в распределённой продуктовой команде. 
-                            </div>
-                        </div>
-                        
-                        <div class="td-items-row">
-                            <div class="td-items-id">
-                            <b>SDC_05</b>
-                            </div>
-                            <div class="td-items-summary">
-                            Позиция React/JS разработчика в проекте sdCloud 
-                            </div>
-                            <div class="td-itemsdescription">
-                            Наше Web приложение – это то с чем взаимодействую все наши пользователи. Поэтому мы уделяем особое внимание его качеству, удобству и надёжности. Так как область моделирования имеет свою специфику, разработка интерфейса для нашего решения зачастую требует решения достаточно интересных задач.
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
-                    <div id="td-sdlitica" class="td-items">
-                        <div class="td-items-row">
-                            <div class="td-items-id">
-                            <b>SDL_01</b>
-                            </div>
-                            <div class="td-items-summary">
-                            Разработка алгоритмов обработки временных рядов и интеграция их в платформу sdLitica
-                            </div>
-                            <div class="td-itemsdescription">
-                            В настоящее время, существует широкий спектр формальных математических методов для обработки данных в формате временных рядов. Такой формат данных становится очень популярен так как он не только активно используется для решения научных задач (результаты моделирования или наблюдений различных экспериментов), но и в современной индустрии, так как подавляющее большинство современных IoT систем производят данные именно такого типа. Для того чтобы превратить большие объёмы данных в полезную информацию необходимо обработать и проанализировать их. Для этого существует широкий спектр математических инструментов, которые нужно реализовать и интегрировать в это решение, чтобы сделать работу с такими данными простой и удобной для всех. Проект разрабатывается совместно с Университетами Thapar (Индия) и Unisinos (Бразилия). 
-                            </div>
-                        </div>
-                        
-                        <div class="td-items-row">
-                            <div class="td-items-id">
-                            <b>SDL_02</b>
-                            </div>
-                            <div class="td-items-summary">
-                            Исследование методов машинного обучшения для работы с временными рядами. Решение задач поиска корреляций, выявление аномалий и предсказания дальнейшего поведения
-                            </div>
-                            <div class="td-itemsdescription">
-                            Зачастую, особенно при проведении различных наблюдений, собираемые данные очень сложно систематизировать и выявить формальные зависимости. В такие моменты приходят на помощь методы и практики машинного обучшения. В рамках этой задачи необходимо исследовать доступные механизмы, реализовать их и интегрировать в облачную платформу sdLitica Проект разрабатывается совместно с Университетами Thapar (Индия) и Unisinos (Бразилия). 
-                            </div>
-                        </div>
-                        
-                        <div class="td-items-row">
-                            <div class="td-items-id">
-                            <b>SDL_03</b>
-                            </div>
-                            <div class="td-items-summary">
-                            React/JS разработчик для платформы sdLitica
-                            </div>
-                            <div class="td-itemsdescription">
-                            Разработка Web интерфейса для приложения, работающего с большими данными – это всегда непростая задача, требующая решения целого ряда нетривиальных подзадач. Для проекта sdLitica необходимо разработать такой Web интерфейс с нуля проведя его проектирование и непосредственную разработку.
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div id="td-insight" class="td-items">
-                        <div class="td-items-row">
-                            <div class="td-items-id">
-                            <b>IPR_01</b>
-                            </div>
-                            <div class="td-items-summary">
-                            Разработчик механизмов выгрузки данных из инструментов поддержки процесса разработки
-                            </div>
-                            <div class="td-itemsdescription">
-                            Целью проекта InsightProject является агрегация и анализ широкого спектра данных, выгружаемых из различных инструментов поддержки процесса разработки ПО. К таким инструментам относятся менеджеры задач (Mantis, Jira, GitHub issues), системы версионного контроля, системы непрерывной интеграции и инструменты по работе с документацией. Для работы с каждым инструментом, зачастую необходимо разрабатывать уникальный компонент, понимающий определённый протокол. 
-                            </div>
-                        </div>
-                        
-                        <div class="td-items-row">
-                            <div class="td-items-id">
-                            <b>IPR_02</b>
-                            </div>
-                            <div class="td-items-summary">
-                            Применение методов машинного обучения и искуственного интеллекта для анализа данных и метрик описывающих процесс разработки ПО 
-                            </div>
-                            <div class="td-itemsdescription">
-                            После того как данные собраны и накоплены, мы можем провести сквозной анализ и связать вместе все загруженные сущности, чтобы получить целостное представление о рассматриваемом проекте. Так как работать приходится в большинстве случаев с гетерогенными и плохо структурированными данными, современные методы обработки могут показать хорошие результаты. 
-                            </div>
-                        </div>
-                        
-                        <div class="td-items-row">
-                            <div class="td-items-id">
-                            <b>IPR_03</b>
-                            </div>
-                            <div class="td-items-summary">
-                            Разработчик React/JS
-                            </div>
-                            <div class="td-itemsdescription">
-                            В проектах, посвящённых обработке и систематизации больших объёмов разрозненных данных, важная роль отводится доступу к данным и грамотной визуализации. Это непростая, но интересная задача, которую необходимо решить для успеха всего проекта. 
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
-                </div>
-                <!-- Left column with content -->
-                <div class="td-contacts">
-                    <br />
-                    <br />
-                    <br />
-                    <div class="td-contacts-envelope">
-                    </div>
-                    <div class="td-contacts-memo">
-                    Адрес для резюме<br />
-                    <b>joinus@cosm-lab.science</b>
-                    </div>
-                </div>
-            </div>
-        </div>
- 
-        
-       
+           
 
-        <footer>
-            <div id="footer-content"> 
-                <div id="footer-content-holder">
-                    <div class="footer-content-row">
-                        <div class="footer-left-wing">
-                            &nbsp;&nbsp;COSM
-                        </div>
-                        <div class="footer-center">
-                            <span>
-                                designed by 
-                                <a href="https://www.behance.net/svalion" target="_blank" style="text-decoration:none; color: lightgray;">
-                                    @svalion
-                                </a>
-                                <br />
-                                COSM lab &copy; 2019. All rights reserved
-                            </span>
-                        </div>
-                        <div class="footer-right-wing">
-                            2019&nbsp;&nbsp;
+            <footer id="footer">
+                <div id="footer-content"> 
+                    <div id="footer-content-holder">
+                        <div class="footer-content-row">
+                            <div class="footer-left-wing">
+                                &nbsp;&nbsp;COSM
+                            </div>
+                            <div class="footer-center">
+                                <span>
+                                    designed by 
+                                    <a href="https://www.behance.net/svalion" target="_blank" style="text-decoration:none; color: lightgray;">
+                                        @svalion
+                                    </a>
+                                    <br />
+                                    COSM lab &copy; 2019. All rights reserved
+                                </span>
+                            </div>
+                            <div class="footer-right-wing">
+                                2019&nbsp;&nbsp;
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </footer>
-        
+            </footer>
+        </div>
     </body>
 
 </html>

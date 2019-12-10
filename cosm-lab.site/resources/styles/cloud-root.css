@@ -54,3 +54,12 @@ body {
     background-color: #48A1D3;
     color: white;
 }
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 80px;    /* Footer height */
+}

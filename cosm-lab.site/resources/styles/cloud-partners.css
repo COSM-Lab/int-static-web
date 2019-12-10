@@ -26,7 +26,7 @@
     background-image: url('../images/web-12.png');
     background-repeat: no-repeat;
     background-position: left bottom;
-    background-size: 30%;
+    background-size: 22%;
 }
 
 #partners-memo {
@@ -85,7 +85,7 @@
 
 
 .fci-bg-bell-soft p {
-    margin-right: 10px;
+    margin-right: 100px;
     margin-top: 30px;
 
 }
@@ -98,6 +98,7 @@
 
 .fci-bg-t-systems p {
     margin-top: 30px;
+    margin-right: 100px;
 }
 
 .fci-logo-t-systems {
