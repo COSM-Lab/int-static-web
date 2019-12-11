@@ -11,6 +11,10 @@
     display: table-cell;
 }
 
+#topics-details {
+    margin-bottom: 100px
+}
+
 
 .td-contacts {
     display: table-cell;

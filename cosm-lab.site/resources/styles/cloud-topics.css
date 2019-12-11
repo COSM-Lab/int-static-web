@@ -130,7 +130,7 @@
 .topic-icon-cell {
     width: 90px;
     background-size: 50px;
-    background-position: center;
+    background-position: center 15px;
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -150,7 +150,7 @@
 .topic-code-cell {
     width: 100px;
     text-align: center;
-    vertical-align: middle;
+    vertical-align: top;
 }
 
 .topic-title-cell {
