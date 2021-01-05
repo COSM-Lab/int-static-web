@@ -1,0 +1,462 @@
+<html>
+
+    <head>
+        <title>
+            COSM :: Laboratory of Cloud-Oriented Solutions and Modelling
+        </title>
+        
+        <meta name="viewport" content="user-scalable=no">
+        
+		<!--link rel="apple-touch-icon" sizes="57x57" href="resources/images/logo/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="resources/images/logo/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="resources/images/logo/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="resources/images/logo/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="resources/images/logo/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="resources/images/logo/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="resources/images/logo/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="resources/images/logo/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="resources/images/logo/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="resources/images/logo/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="resources/images/logo/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="resources/images/logo/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="resources/images/logo/favicon-16x16.png">
+		<link rel="manifest" href="resources/images/logo/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="resources/images/logo/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff"-->
+		
+		
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" />
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed" />
+        <link type="text/css" rel='stylesheet' href='../resources/styles/cloud-root.css?1576086487' media='all' />
+        <link type="text/css" rel='stylesheet' href='../resources/styles/cloud-header.css?1576086487' media='all' />
+        <link type="text/css" rel='stylesheet' href='../resources/styles/cloud-banner.css?1576086487' media='all' />
+        <link type="text/css" rel='stylesheet' href='../resources/styles/cloud-next-event.css?1576086487' media='all' />
+        <link type="text/css" rel='stylesheet' href='../resources/styles/cloud-projects.css?1576086487' media='all' />
+        <link type="text/css" rel='stylesheet' href='../resources/styles/cloud-partners.css?1576086487' media='all' />
+        <link type="text/css" rel='stylesheet' href='../resources/styles/cloud-positions.css?1576086487' media='all' />
+        <link type="text/css" rel='stylesheet' href='../resources/styles/cloud-topics.css?1576086487' media='all' />
+        <link type="text/css" rel='stylesheet' href='../resources/styles/cloud-footer.css?1576086487' media='all' />
+        
+        <!--link rel="stylesheet" href="resources/3pp/OwlCarousel2-2.2.1/assets/owl.carousel.min.css" />
+        <link rel="stylesheet" href="resources/3pp/OwlCarousel2-2.2.1/assets/owl.theme.sdcloud-default.css" /-->
+
+        <!-- Font Awesome Styles-->
+        <!--link rel="stylesheet" 
+                href="https://use.fontawesome.com/releases/v5.2.0/css/solid.css" 
+                integrity="sha384-wnAC7ln+XN0UKdcPvJvtqIH3jOjs9pnKnq9qX68ImXvOGz2JuFoEiCjT8jyZQX2z" 
+                crossorigin="anonymous">
+        <link rel="stylesheet" 
+                href="https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css" 
+                integrity="sha384-HbmWTHay9psM8qyzEKPc8odH4DsOuzdejtnr+OFtDmOcIVnhgReQ4GZBH7uwcjf6" 
+                crossorigin="anonymous"-->
+        
+        <!-- Scripts -->
+        <script type='text/javascript' src='../resources/scripts/jquery.js?1500409708444'></script>
+        <script type='text/javascript' src='../resources/scripts/jquery-migrate.min.js?1500409708444'></script>
+        <script type='text/javascript' src='../resources/3pp/OwlCarousel2-2.2.1/owl.carousel.min.js?1500409708444'></script>
+        <script type='text/javascript' >
+            $(document).ready(function(){
+                var owl = $('.owl-carousel');
+               
+                owl.owlCarousel({
+                    items: 1,
+                    loop: true,
+                    center: true,
+                    navigation: false,
+                    slideSpeed: 60,
+                    paginationSpeed: 800,
+                    singleItem: true,
+                    autoplayTimeout: 5000,
+                    autoplay: true,
+                    dots:true
+                });
+                
+                $(window).resize(handleResize);
+            });
+            
+            toggleMobileMenu = function() {
+                $("#header-main-menu").toggle(300);
+            }
+            
+            function handleResize(){
+                if ($("#header-mobile-menu-icon").css("display") == "none" ){
+                    $("#header-main-menu").show(600);
+                } else {
+                    $("#header-main-menu").hide();
+                }
+            }
+        </script>
+        
+        <script>
+            $(document).ready(function(){
+              // Add smooth scrolling to all links
+              $("a").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                  // Prevent default anchor click behavior
+                  event.preventDefault();
+
+                  // Store hash
+                  var hash = this.hash;
+
+                  // Using jQuery's animate() method to add smooth page scroll
+                  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                  $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                  }, 800, function(){
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                  });
+                } // End if
+              });
+            });
+        </script>
+        
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106134212-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-106134212-1');
+        </script>
+    </head>
+    
+    <body>
+        <div id="page-container">
+            <div id="content-wrap">
+                <header class="header-with-wallpaper">
+                    <div class="header-menu-holder">
+                        <div class="header-lab-logo">
+                            <a href="#" class="header-main-menu-lab-name">cosm</a>
+                        </div>
+                        <div id="header-menu">
+                            <ul id="header-main-menu" class="header-main-menu">
+                                <li class="header-main-menu-item">
+                                    <a href="#topics" class="header-main-menu-item-text">темы</a>
+                                </li>
+                                <li class="header-main-menu-item">
+                                    <a href="#positions" class="header-main-menu-item-text">вакансии</a>
+                                </li>
+                                <li class="header-main-menu-item">
+                                    <a href="#partners" class="header-main-menu-item-text">партнёры</a>
+                                </li>
+                                <li class="header-main-menu-item">
+                                    <a href="#projects" class="header-main-menu-item-text">проекты</a>
+                                </li>
+                                <li class="header-main-menu-item">
+                                    <a href="https://learning.cosm-lab.science" target="_blank" class="header-main-menu-item-text">Обучение</a>
+                                </li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                    <div class="header-university-logos-holder">
+                        <div class="header-university-logos header-blank-logo">
+                        </div>
+                        <a href="https://itmo.ru" target="_blank">
+                            <div class="header-university-logos header-itmo-logo">
+                            </div>
+                        </a>
+                        <a href="https://scs.ifmo.ru/ru/" target="_blank">
+                            <div class="header-university-logos header-faculty-logo">
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div id="header-content">                
+                        <div id="header-content-title">
+                            Лаборатория&nbsp;&nbsp;&nbsp;облачных
+                        </div>
+                        <div id="header-content-subtitle">
+                            решений и моделирования
+                        </div>
+                        
+                            <a href="javascript:void(0);" onclick="toggleMobileMenu()">
+                                <div id="header-mobile-menu-icon"></div>
+                            </a>
+                    </div>
+                    
+                </header>
+                
+                <!--div id="banner">
+                    <div id="banner-title">
+                        System Dynamics (SD)
+                    </div>
+                    <div id="banner-subtitle">
+                         Is an approach to understanding the nonlinear behaviour of complex systems over time using stocks, flows, internal feedback loops, table functions and time delays. System dynamics is a methodology and mathematical modeling technique to frame, understand, and discuss complex issues and problems.
+                    </div>
+                </div-->
+
+                <!--
+                <div id="next-event">
+                    <div id="next-event-section-title">
+                        Where to meet us
+                    </div>
+                    <div id="next-event-container">
+                        <div id="next-event-content-holder">
+                            <div id="next-event-content-logo-and-dates">
+                                    <a id="next-event-content-logo" href="https://www.fruct.org" target="_blank">
+                                    </a>
+                                    <div id="next-event-content-dates">
+                                        <div id="next-event-content-date-line">
+                                           November 14-16, 2018
+                                        </div>
+                                        <div id="next-event-content-location-line">
+                                            Bologna, Italy
+                                        </div>
+                                    </div>
+                            </div>
+                            <div id="next-event-content-text">
+                                <div id="next-event-title">
+                                   23rd FRUCT conference
+                                </div>
+                                <div id="next-event-memo">
+                                        On 15th of November we will have three talks
+                                        on modelling dynamics systems, designing new
+                                        kinds of data storages and analysis of source codes
+                                </div>
+                            </div>
+                            <div id="next-event-content-puff"></div>
+                        </div>
+                    </div>
+                </div>
+                -->
+
+                <iframe width="560px" 
+                        height="315px" 
+                        src="https://www.youtube.com/embed/ca_J5kWAyUA" 
+                        frameborder="0" 
+                        style="display: block; margin-left: auto;  margin-right: auto; margin-top: 50px; margin-bottom: 50px"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                </iframe>
+                
+                <div id="projects" class="white-section">
+                    <div id="projects-title">
+                        Проекты
+                    </div>
+                    <div id="projects-container">
+                        <div id="projects-container-row">                
+                            <div id="projects-container-item">
+                                <a href="https://sdcloud.io?utm_source=cosm-lab" target="_blank"><div class="projects-container-item-logo fci-logo-sdcloud">
+                                </div></a>
+                                <div class="projects-container-item-content fci-bg-sdcloud">
+                                    <p>Международный исследовалельский проект по разработке бесплатной и открытой платформы для математического моделирования. Проект разрабатывается совместно с партнёрами из MIT, Berkeley и рядом других ВУЗов и компаний. Разрабатываемая система уже используется для проведения реальных исследований в нескольких зарубежных ВУЗах.</p>
+                                </div>
+                            </div>
+                            <div class="projects-container-item-spacer"></div>
+                            <div id="projects-container-item">
+                                <a href="https://projects.sdcloud.io/sdLitica/project.html?utm_source=cosm-lab" target="_blank"><div class="projects-container-item-logo fci-logo-sdlitica">
+                                </div></a>
+                                <div class="projects-container-item-content fci-bg-sdlitica">
+                                    <p>Международный исследовалельский проект по разработке бесплатной и открытой платформы для анализ временных рядов. Этот тип данных крайне важен как для работы с результатами моделирования, так и для современных промышленных решений, таких как IoT. Проект активно разрабатывается совместно с друзьями из Бразилии и Индии.</p>
+                                </div>
+                            </div>
+                            <div class="projects-container-item-spacer"></div>
+                            <div id="projects-container-item">
+                                <a href="http://insightproject.space?utm_source=cosm-lab" target="_blank"><div class="projects-container-item-logo fci-logo-insight">
+                                </div></a>
+                                <div class="projects-container-item-content fci-bg-insight">
+                                    <p>Цель проетка &mdash; построение комплексной системы для аггрегации данных описывающих процесс разработки программного обеспечения со всеми задачами, коммитами сборками и т.д. и предоставление пользователю комплексной аналитики, позволяющей в деталях проанализировать как весть проект в целом, так и работу над отдельными компонентами или задачами.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+         
+                <div class="blue-section partners-section-background">
+                    <div id="partners">
+                        <div id="partners-title">
+                            Партнёры
+                        </div>
+                        
+                        <div id="partners-memo">
+                            Наряду с разработкой собственных проектов и проведением ряда исследований, наша лаборатория приглашает принять участие в работе над проектами совместно с нашими индустриальными партнёрами.
+                        </div>
+                    </div>
+                    
+                    <div id="partners-container">
+                        <div id="partners-container-row">                
+                            <div id="partners-container-item">
+                                <div class="partners-container-item-logo fci-logo-bell-soft">
+                                </div>
+                                <div class="partners-container-item-content fci-bg-bell-soft">
+                                    <p>T-Systems — стратегическое  подразделение Deutsche Telekom, один из лидеров в сфере информационных  и телекоммуникационных услуг в сегменте В2В. В рамках нашего партнёрства планируется привлечение студентов для работы в проектах, связанных  с решением практических задач в области IoT и Blockchain.</p>
+                                </div>
+                            </div>
+                            <div class="partners-container-item-spacer"></div>
+                            <div id="partners-container-item">
+                                <div class="partners-container-item-logo fci-logo-t-systems">
+                                </div>
+                                <div class="partners-container-item-content fci-bg-t-systems">
+                                    <p>Компания Bell Soft является одним  из лидеров на ранке разработки  инструментов и окружения для  языка программирования Java,  а виртуальная машина Java Liberica входит в топ 5 реализаций JVM. Помимо этого, компания работает над целым спектром различных решений в области интернета вещей и Blockchain.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              
+                <div class="white-section positions-section-background">
+                    <div id="positions">
+                        <div id="positions-title">
+                            Участие в проектах
+                        </div>
+                        
+                        <div id="positions-memo">
+                            Так как мы разрабатываем крупные проекты с большим количеством пользователей и партнёров, в том числе и из зарубежных ВУЗов, у нас всегда есть много интересных задач, которые помогут изучить новые новые технологии, научиться работать в профессиональной команде, познакомиться с зарубежными коллегами и усилить своё персональное портфолио.<br />
+                        </div>
+                        
+                        <div class="positions-projects-holder">
+                            <div class="positions-projects-row">
+                                <div class="positions-projects-logo-row-cell positions-projects-logo positions-projects-logo-sdcloud"></div>
+                                <div class="positions-projects-logo-row-cell positions-projects-description">
+                                    <p><b>Back-end:</b></p>
+                                    <p><b>Font-end:</b></p>
+                                </div>
+                                <div class="positions-projects-logo-row-cell positions-projects-skills">
+                                    <p>C#, Python, Bash</p>
+                                    <p>JavaScript, ReactJS</p>
+                                </div>
+                            </div>
+                            <div class="positions-projects-row">
+                                <div class="positions-projects-logo-row-cell positions-projects-logo positions-projects-logo-sdlitica"></div>
+                                <div class="positions-projects-logo-row-cell positions-projects-description">
+                                    <p><b>Back-end:</b></p>
+                                    <p><b>Font-end:</b></p>
+                                </div>
+                                <div class="positions-projects-logo-row-cell positions-projects-skills">
+                                    <p>C#, Python, Bash</p>
+                                    <p>JavaScript, ReactJS</p>
+                                </div>
+                            </div>
+                            <div class="positions-projects-row">
+                                <div class="positions-projects-logo-row-cell positions-projects-logo positions-projects-logo-insight"></div>
+                                <div class="positions-projects-logo-row-cell positions-projects-description">
+                                    <p><b>Back-end:</b></p>
+                                    <p><b>Font-end:</b></p>
+                                </div>
+                                <div class="positions-projects-logo-row-cell positions-projects-skills">
+                                    <p>C#, Python, Bash</p>
+                                    <p>JavaScript, ReactJS</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        <div class="projects-positions-link">
+                            <a href="topics.html">
+                                Больше вакансий&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="blue-section topics-section-background">
+                    <div id="topics">
+                        <div id="topics-title">
+                            Темы для исследований
+                        </div>
+                        
+                        <div id="topics-memo">
+                            Предлагаемые темы могут быть использованы в качестве тем бакалаврских или магистерских диссертаций. Также их можно использовать для прохождения практики. Работа над всеми темами подразумевает работу с командами соответствующих проектов и рассчитана на 10-15 рабочих часов в неделю.<br />
+                            <br />
+                        </div>
+
+                        <!-- Table with sample research topics -->
+                        <div class="topics-list-table">
+                            <div class="topics-list-row">
+                                <!-- related project icon -->
+                                <div class="topics-list-row-cell topic-icon-cell topic-icon-cell-sdcloud">
+                                </div>
+                                <!-- topic code -->
+                                <div class="topics-list-row-cell topic-code-cell">
+                                SDC-01
+                                </div>
+                                <!-- topic title -->
+                                <div class="topics-list-row-cell topic-title-cell">
+                                Разработка механизма расчёта системно-динамических моделей на GPU
+                                </div>
+                                <!-- topic summary -->
+                                <div class="topics-list-row-cell topic-summary-cell">
+                                В рамках этой темы необходимо исследовать существующие методы генерации исполняемого кода (генерируется код на Python и C) и разработать систему трансляции описания системно-динамических моделей в код для GPU (например CUDA).
+                                </div>
+                            </div>
+                            <div class="topics-list-row">
+                                <!-- related project icon -->
+                                <div class="topics-list-row-cell topic-icon-cell topic-icon-cell-sdlitica">
+                                </div>
+                                <!-- topic code -->
+                                <div class="topics-list-row-cell topic-code-cell">
+                                SDL-02
+                                </div>
+                                <!-- topic title -->
+                                <div class="topics-list-row-cell topic-title-cell">
+                                Исследование методов машинного обучшения для работы с временными рядами. Решение задач поиска корреляций, выявление аномалий и предсказания дальнейшего поведения
+                                </div>
+                                <!-- topic summary -->
+                                <div class="topics-list-row-cell topic-summary-cell">
+                                Зачастую, особенно при проведении различных наблюдений, собираемые данные очень сложно систематизировать и выявить формальные зависимости. В такие моменты приходят на помощь методы и практики машинного обучшения. В рамках этой задачи необходимо исследовать доступные механизмы, реализовать их и интегрировать в облачную платформу sdLitica. Проект разрабатывается совместно с Университетами Thapar (Индия) и Unisinos (Бразилия).
+
+                                </div>
+                            </div>
+                            <div class="topics-list-row">
+                                <!-- related project icon -->
+                                <div class="topics-list-row-cell topic-icon-cell topic-icon-cell-insight">
+                                </div>
+                                <!-- topic code -->
+                                <div class="topics-list-row-cell topic-code-cell">
+                                IPR-01
+                                </div>
+                                <!-- topic title -->
+                                <div class="topics-list-row-cell topic-title-cell">
+                                Разработчик механизмов выгрузки данных из инструментов поддержки процесса разработки
+                                </div>
+                                <!-- topic summary -->
+                                <div class="topics-list-row-cell topic-summary-cell">
+                                Целью проекта InsightProject является агрегация и анализ широкого спектра данных, выгружаемых из различных инструментов поддержки процесса разработки ПО. К таким инструментам относятся менеджеры задач (Mantis, Jira, GitHub issues), системы версионного контроля, системы непрерывной интеграции и инструменты по работе с документацией. Для работы с каждым инструментом, зачастую необходимо разрабатывать уникальный компонент, понимающий определённый протокол.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="topics-positions-link">
+                            <a href="topics.html">
+                                Больше тем&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <div id="footer-content" class="with-line-splitter"> 
+                    <div id="footer-content-holder">
+                        <div class="footer-content-row">
+                            <div class="footer-left-wing">
+                                &nbsp;&nbsp;COSM
+                            </div>
+                            <div class="footer-center">
+                                <span>
+                                    designed by 
+                                    <a href="https://www.behance.net/svalion" target="_blank" style="text-decoration:none; color: lightgray;">
+                                        @svalion
+                                    </a>
+                                    <br />
+                                    COSM lab &copy; 2019-2020. All rights reserved
+                                </span>
+                            </div>
+                            <div class="footer-right-wing">
+                                ITMO University&nbsp;&nbsp;
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+
+</html>
