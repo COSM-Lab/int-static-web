@@ -13,12 +13,18 @@
             if (locale.indexOf('-') != -1) {
                 locale = locale.split('-')[0];
             }
+            if (locale != "ru") {
+                locale = "en"
+            }
             var path = window.location.href;
             var fileName = "index.html";
             if (path.indexOf(".html") != -1) {
                 path = window.location.href.substring(0, window.location.href.lastIndexOf("/"));
             }
-            window.location = path + "/en/"
+            if (!path.endsWith("/")) {
+                path += "/";
+            }
+            window.location = path + locale + "en/"
         </script>
     </head>
 
