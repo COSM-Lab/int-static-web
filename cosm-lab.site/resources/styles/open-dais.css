@@ -1,0 +1,62 @@
+.od-header-with-wallpaper {
+    width:100%; 
+    height: 800px;
+    background-image: url('../images/od-picture.png');
+    background-repeat: no-repeat;
+    background-position: 25% bottom;
+    background-size: 30%;
+    min-width: 1100px;
+}
+
+#od-header-content-title {
+    font-family: 'IBM Plex Sans', serif;
+    font-size: 65px;
+    padding-top: 65px;
+    padding-right: 20px;
+    color: white;
+    height: 70px;
+    margin-top: 40px;
+    padding-right: 200px;
+    padding-bottom: 25px;
+    background-image: url('../images/web-12.png');
+    background-repeat: no-repeat;
+    background-position: 595 145;
+    background-size: 30%;
+    text-align: right;
+}
+
+#od-header-content-subtitle {
+    font-family: 'IBM Plex Sans', serif;
+    color: white;
+    height: 400px;
+    font-size: 45px;
+    text-align: right;
+    margin-top: 50px;
+    padding-right: 120px;
+}
+
+.od-topic-icon-cell {
+    width: 90px;
+    background-size: 50px;
+    background-position: center 15px;
+    background-repeat: no-repeat;
+}
+
+.topic-icon-cell-check-circle {
+    background-image: url('../images/checked-circle.png');
+}
+
+.topic-presenter-cell {
+    width: 200px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.od-topics-list-row {
+    display: table-row;
+    margin-bottom: 10px;
+}
+
+.od-topics-list-row div {
+    border-bottom: 1px solid white;
+}

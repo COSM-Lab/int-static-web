@@ -1,0 +1,368 @@
+<html>
+
+    <head>
+        <title>
+            COSM :: Laboratory of Cloud-Oriented Solutions and Modelling
+        </title>
+        
+        <meta name="viewport" content="user-scalable=no">
+        
+		<!--link rel="apple-touch-icon" sizes="57x57" href="resources/images/logo/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="resources/images/logo/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="resources/images/logo/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="resources/images/logo/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="resources/images/logo/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="resources/images/logo/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="resources/images/logo/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="resources/images/logo/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="resources/images/logo/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="resources/images/logo/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="resources/images/logo/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="resources/images/logo/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="resources/images/logo/favicon-16x16.png">
+		<link rel="manifest" href="resources/images/logo/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="resources/images/logo/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff"-->
+		
+		
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" />
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed" />
+        <link type="text/css" rel='stylesheet' href='../resources/styles/cloud-root.css?1576086487' media='all' />
+        <link type="text/css" rel='stylesheet' href='../resources/styles/cloud-header.css?1576086487' media='all' />
+        <link type="text/css" rel='stylesheet' href='../resources/styles/cloud-banner.css?1576086487' media='all' />
+        <link type="text/css" rel='stylesheet' href='../resources/styles/cloud-next-event.css?1576086487' media='all' />
+        <link type="text/css" rel='stylesheet' href='../resources/styles/cloud-projects.css?1576086487' media='all' />
+        <link type="text/css" rel='stylesheet' href='../resources/styles/cloud-partners.css?1576086487' media='all' />
+        <link type="text/css" rel='stylesheet' href='../resources/styles/cloud-positions.css?1576086487' media='all' />
+        <link type="text/css" rel='stylesheet' href='../resources/styles/cloud-topics.css?1576086487' media='all' />
+        <link type="text/css" rel='stylesheet' href='../resources/styles/cloud-footer.css?1576086487' media='all' />
+        <link type="text/css" rel='stylesheet' href='../resources/styles/open-dais.css?1576086487' media='all' />
+        
+        <!--link rel="stylesheet" href="resources/3pp/OwlCarousel2-2.2.1/assets/owl.carousel.min.css" />
+        <link rel="stylesheet" href="resources/3pp/OwlCarousel2-2.2.1/assets/owl.theme.sdcloud-default.css" /-->
+
+        <!-- Font Awesome Styles-->
+        <!--link rel="stylesheet" 
+                href="https://use.fontawesome.com/releases/v5.2.0/css/solid.css" 
+                integrity="sha384-wnAC7ln+XN0UKdcPvJvtqIH3jOjs9pnKnq9qX68ImXvOGz2JuFoEiCjT8jyZQX2z" 
+                crossorigin="anonymous">
+        <link rel="stylesheet" 
+                href="https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css" 
+                integrity="sha384-HbmWTHay9psM8qyzEKPc8odH4DsOuzdejtnr+OFtDmOcIVnhgReQ4GZBH7uwcjf6" 
+                crossorigin="anonymous"-->
+        
+        <!-- Scripts -->
+        <script type='text/javascript' src='../resources/scripts/jquery.js?1500409708444'></script>
+        <script type='text/javascript' src='../resources/scripts/jquery-migrate.min.js?1500409708444'></script>
+        <script type='text/javascript' src='../resources/3pp/OwlCarousel2-2.2.1/owl.carousel.min.js?1500409708444'></script>
+        <script type='text/javascript' >
+            $(document).ready(function(){
+                var owl = $('.owl-carousel');
+               
+                owl.owlCarousel({
+                    items: 1,
+                    loop: true,
+                    center: true,
+                    navigation: false,
+                    slideSpeed: 60,
+                    paginationSpeed: 800,
+                    singleItem: true,
+                    autoplayTimeout: 5000,
+                    autoplay: true,
+                    dots:true
+                });
+                
+                $(window).resize(handleResize);
+            });
+            
+            toggleMobileMenu = function() {
+                $("#header-main-menu").toggle(300);
+            }
+            
+            function handleResize(){
+                if ($("#header-mobile-menu-icon").css("display") == "none" ){
+                    $("#header-main-menu").show(600);
+                } else {
+                    $("#header-main-menu").hide();
+                }
+            }
+        </script>
+        
+        <script>
+            $(document).ready(function(){
+              // Add smooth scrolling to all links
+              $("a").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                  // Prevent default anchor click behavior
+                  event.preventDefault();
+
+                  // Store hash
+                  var hash = this.hash;
+
+                  // Using jQuery's animate() method to add smooth page scroll
+                  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                  $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                  }, 800, function(){
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                  });
+                } // End if
+              });
+            });
+        </script>
+        
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106134212-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-106134212-1');
+        </script>
+    </head>
+    
+    <body>
+        <div id="page-container">
+            <div id="content-wrap">
+                <header class="od-header-with-wallpaper">
+                    <div class="header-menu-holder">
+                        <div class="header-menu-languages">
+                            <div class="header-menu-language">
+                                <a href="/ru/">ru</a>
+                            </div>
+                            <div class="header-menu-language header-menu-language-selected">
+                                <a href="/en/">en</a>
+                            </div>
+                        </div>
+                        <div class="header-lab-logo">
+                            <a href="#" class="header-main-menu-lab-name">cosm</a>
+                        </div>
+                        <div id="header-menu">
+                            <ul id="header-main-menu" class="header-main-menu">
+                                <li class="header-main-menu-item">
+                                    <a href="#topics" class="header-main-menu-item-text">topics</a>
+                                </li>
+                                <li class="header-main-menu-item">
+                                    <a href="#positions" class="header-main-menu-item-text">positions</a>
+                                </li>
+                                <li class="header-main-menu-item">
+                                    <a href="#partners" class="header-main-menu-item-text">partners</a>
+                                </li>
+                                <li class="header-main-menu-item">
+                                    <a href="#projects" class="header-main-menu-item-text">projects</a>
+                                </li>
+                                <li class="header-main-menu-item">
+                                    <a href="https://learning.cosm-lab.science" target="_blank" class="header-main-menu-item-text">Learning</a>
+                                </li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                    <div class="header-university-logos-holder">
+                        <div class="header-university-logos header-blank-logo">
+                        </div>
+                        <a href="https://itmo.ru" target="_blank">
+                            <div class="header-university-logos header-itmo-logo">
+                            </div>
+                        </a>
+                        <a href="https://scs.ifmo.ru/ru/" target="_blank">
+                            <div class="header-university-logos header-faculty-logo">
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div id="header-content">
+                        <div id="od-header-content-title">
+                            Open Dais 
+                        </div>
+                        <div id="od-header-content-subtitle">
+                            International <br /> educational project
+                        </div>
+                        
+                            <a href="javascript:void(0);" onclick="toggleMobileMenu()">
+                                <div id="header-mobile-menu-icon"></div>
+                            </a>
+                    </div>
+                    
+                </header>
+                
+              
+                <div class="white-section positions-section-background">
+                    <div id="positions">
+                        <div id="positions-title">
+                            About the project
+                        </div>
+                        
+                        <div id="positions-memo">
+                            <p>
+                                <b>Open Dais</b> - is an international educational project which <u>goal</u> is to give an opportunity to students from different countries to meet with IT and science world experts from all over the world.
+                                This project is an open community where everyone can listen to talks on modern and hot topics, find new friends, wider their horizonts and find inspiration learn, research and build 
+                                a better a brighter world.
+                            </p>
+                            <p>
+                                Initially started by COSM Laboratory from ITMO University, project found a warm feedback from different parts of the world and started to welcome new experts, who agreed to share
+                                their knowledge, experience and wisdom with those who just joined or will join soon IT and scientfic communities all over the world. 
+                            </p>
+                            <p>
+                                Open talks, which are perfromed in this program are available all over the world and anyone interested can join, watch on-line or check out the recordings for selected sessions.
+                                Each on-line session accepts up to 100 participants, that is why, for each session free space reservation is required.
+                            </p>
+                            <p>
+                                Sessions tentative schedule is available below. At of now, lectures will start in the second half of february 2021.
+                            </p>
+                            <br /><br /><br />
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="blue-section topics-section-background">
+                    <div id="topics">
+                        <div id="topics-title">
+                            Tentative schedule
+                        </div>
+                        
+                        <div id="topics-memo">
+                            <p>
+                                As of today, there is no precise schedule available. We are working a lot with all our respected presenters to prepare a comfortable plan for them and four listeners.
+                            </p>
+                            <p>
+                                Meanwhile we are glad to share the list of topics we are going to deliver during first couple months of our program.
+                            </p>
+                            <br />
+                        </div>
+
+                        <!-- Table with sample research topics -->
+                        <div class="topics-list-table">
+                            <div class="od-topics-list-row">
+                                <!-- related project icon -->
+                                <div class="topics-list-row-cell od-topic-icon-cell topic-icon-cell-check-circle">
+                                </div>
+                                <!-- topic code -->
+                                <div class="topics-list-row-cell topic-presenter-cell">
+                                <p>Dr. I. Perl</p><p>(COSM lab)</p>
+                                </div>
+                                <!-- topic title -->
+                                <div class="topics-list-row-cell topic-title-cell">
+                                Complex systems any why do they fail
+                                </div>
+                                <!-- topic summary -->
+                                <div class="topics-list-row-cell topic-summary-cell">
+                                In this talk I'll try to cover key apects in understanding systems complexity and reasons why they may fail. We will follow a jouney that starts from Hegelian dialectics and up to modern works from Grady Booch, Evgeny Sedov and Richard I. Cook.
+                                At the end, I hope that listeners will fear less and understand more the meaning of the complixily and its dominating role in entire moden world.
+                                </div>
+                            </div>
+                            <div class="od-topics-list-row">
+                                <!-- related project icon -->
+                                <div class="topics-list-row-cell od-topic-icon-cell topic-icon-cell-check-circle">
+                                </div>
+                                <!-- topic code -->
+                                <div class="topics-list-row-cell topic-presenter-cell">
+                                    <p>Dr. Jasminder Sandhu</p><p>(Chitkara University)</p>
+                                </div>
+                                <!-- topic title -->
+                                <div class="topics-list-row-cell topic-title-cell">
+                                    Machine Learning for real-world problems.
+                                </div>
+                                <!-- topic summary -->
+                                <div class="topics-list-row-cell topic-summary-cell">
+                                    In modern world we hear a lot about Machine Learning (ML) and Artificail Intelligence (AI). We see many funny and not videos called "Deep fake" and playing with mobile apps making funny things with application of ML and AI.
+                                    Goal of this talk is to show how important these technologies are for solving real world problems and help people in many impotant areas, beside entertainment.
+                                </div>
+                            </div>
+                            <div class="od-topics-list-row">
+                                <!-- related project icon -->
+                                <div class="topics-list-row-cell od-topic-icon-cell topic-icon-cell-check-circle">
+                                </div>
+                                <!-- topic code -->
+                                <div class="topics-list-row-cell topic-presenter-cell">
+                                <p>Presenter Name</p><p>(Organization)</p>
+                                </div>
+                                <!-- topic title -->
+                                <div class="topics-list-row-cell topic-title-cell">
+                                Topic on enterprise perfromance and scaleability
+                                </div>
+                                <!-- topic summary -->
+                                <div class="topics-list-row-cell topic-summary-cell">
+                                TBD
+                                </div>
+                            </div>
+                            <div class="od-topics-list-row">
+                                <!-- related project icon -->
+                                <div class="topics-list-row-cell od-topic-icon-cell topic-icon-cell-check-circle">
+                                </div>
+                                <!-- topic code -->
+                                <div class="topics-list-row-cell topic-presenter-cell">
+                                    <p>Presenter Name</p><p>(Organization)</p>
+                                </div>
+                                <!-- topic title -->
+                                <div class="topics-list-row-cell topic-title-cell">
+                                Topic on ubiquitous computing
+                                </div>
+                                <!-- topic summary -->
+                                <div class="topics-list-row-cell topic-summary-cell">
+                                TBD
+                                </div>
+                            </div>
+                            <div class="od-topics-list-row">
+                                <!-- related project icon -->
+                                <div class="topics-list-row-cell od-topic-icon-cell topic-icon-cell-check-circle">
+                                </div>
+                                <!-- topic code -->
+                                <div class="topics-list-row-cell topic-presenter-cell">
+                                    <p>Dr. Jasminder Sandhu</p><p>(Chitkara University)</p>
+                                </div>
+                                <!-- topic title -->
+                                <div class="topics-list-row-cell topic-title-cell">
+                                    Machine Health Monitoring.
+                                </div>
+                                <!-- topic summary -->
+                                <div class="topics-list-row-cell topic-summary-cell">
+                                    TBD
+                                </div>
+                            </div>
+                            <br /><br />
+                        </div>
+                        
+                        <!--div class="topics-positions-link">
+                            <a href="topics.html">
+                                More topics&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </a>
+                        </div-->
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <div id="footer-content" class="with-line-splitter"> 
+                    <div id="footer-content-holder">
+                        <div class="footer-content-row">
+                            <div class="footer-left-wing">
+                                &nbsp;&nbsp;COSM
+                            </div>
+                            <div class="footer-center">
+                                <span>
+                                    designed by 
+                                    <a href="https://www.behance.net/svalion" target="_blank" style="text-decoration:none; color: lightgray;">
+                                        @svalion
+                                    </a>
+                                    <br />
+                                    COSM lab &copy; 2019-2021. All rights reserved
+                                </span>
+                            </div>
+                            <div class="footer-right-wing">
+                                ITMO University&nbsp;&nbsp;
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+
+</html>
