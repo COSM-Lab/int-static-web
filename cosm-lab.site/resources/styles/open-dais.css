@@ -136,3 +136,50 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+
+
+
+
+.speacker-poster-container {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.speacker-poster {
+    display: table-row;
+    width: 100%;
+}
+
+.speacker-picture {
+    display: table-cell;
+    width: 250px;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.speacker-ip {
+    background-image: url('../images/od/speakers/ip.png');
+}
+
+.speacker-js {
+    background-image: url('../images/od/speakers/js.png');
+}
+
+.speacker-jb {
+    background-image: url('../images/od/speakers/jb.png');
+}
+
+.speacker-bio {
+    display: table-cell;
+    padding: 20px;
+    font-family: 'IBM Plex Sans', serif;
+    font-size: 20px;
+}
+
+.speacker-bio a {
+    text-decoration: none;
+    color: #3F88C5;
+}
