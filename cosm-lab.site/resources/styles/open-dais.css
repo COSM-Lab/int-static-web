@@ -172,6 +172,10 @@
     background-image: url('../images/od/speakers/jb.png');
 }
 
+.speacker-ros {
+    background-image: url('../images/od/speakers/ros.png');
+}
+
 .speacker-bio {
     display: table-cell;
     padding: 20px;
