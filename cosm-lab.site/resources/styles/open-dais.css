@@ -137,7 +137,12 @@
     background-repeat: no-repeat;
 }
 
-
+.birla-logo {
+    background-image: url('../images/birla-logo.png');
+    background-position: center;
+    background-size: 85%;
+    background-repeat: no-repeat;
+}
 
 
 .speacker-poster-container {
