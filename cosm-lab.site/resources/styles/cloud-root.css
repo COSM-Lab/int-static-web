@@ -63,3 +63,28 @@ body {
 #content-wrap {
   padding-bottom: 80px;    /* Footer height */
 }
+
+@media only screen and (max-width: 760px) {
+    .white-section {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    
+    .blue-section {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+
+@media only screen and (max-device-width: 760px) {
+    .white-section {
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+    
+    .blue-section {
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+}
+

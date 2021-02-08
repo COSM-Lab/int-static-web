@@ -47,7 +47,9 @@
     min-width: 400px;
     margin-left: auto;
     margin-right: auto;
-    display: table;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #partners-container-row {
@@ -61,10 +63,10 @@
     font-family: 'IBM Plex Sans', serif;
     font-size: 14px;
     line-height: 22px;
-    width: 250px;
+    width: 40%;
     min-width: 250px;
     margin-left: 20px;
-    height: 230px;
+    
     vertical-align: top;
 }
 
@@ -129,17 +131,6 @@
         width: 80%;
     }
     
-    .partners-container-item-content {        
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        background-position: left top;
-        padding-left: 40px;
-        padding-top: 60px;
-    }
-    
     #partners-container-item {
         display: block;
         width: 80%;
@@ -170,28 +161,21 @@
         display: block;
         width: 90%;
         position: relative;
-        padding-top: 50%;
+        padding-top: 10%;
         margin-left: auto;
         margin-right: auto;
         
     }
     
-    .partners-container-item-content {        
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        font-size: 25px;
-        background-position: left top;
-        padding: 50px;
-        padding-top: 120px;
-        font-size: 40px;
-        width: auto;
-        height: auto;
-    }
     
     .fci-bg-engine p {
         margin-left:120px;
+    }
+
+    .partners-section-background {
+        background-image: url('../images/web-16.png');
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        background-size: 25%;
     }
 }

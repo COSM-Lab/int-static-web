@@ -258,6 +258,20 @@ header {
       #header-mobile-menu-icon {
         display: block;
     }
+
+    .header-with-wallpaper {
+        background-image: unset;
+    }
+
+    #header-content-title {
+        text-align: unset;
+        background-position: 575 15;
+    }
+
+    #header-content-subtitle {
+        text-align: unset;
+        background-position: 330 70;
+    }
 }
 
 @media only screen and (max-device-width: 760px) {
@@ -297,5 +311,19 @@ header {
       }
       #header-mobile-menu-icon {
         display: block;
+    }
+
+    .header-with-wallpaper {
+        background-image: unset;
+    }
+
+    #header-content-title {
+        text-align: unset;
+        background-position: 575 15;
+    }
+
+    #header-content-subtitle {
+        text-align: unset;
+        background-position: 330 70;
     }
 }
