@@ -97,7 +97,7 @@
     color: black;
     font-size: 22px;
     margin-top: 20px;
-    width: 1100px;
+    width: 100%;
     text-align: right;
 }
 
@@ -152,6 +152,10 @@
     #positions-memo {
         display: none;
     }
+
+    .projects-positions-link {
+        display: none;
+    }
 }
 
 @media only screen and (max-device-width: 760px) {
@@ -196,6 +200,10 @@
     }
 
     #positions-memo {
+        display: none;
+    }
+
+    .projects-positions-link {
         display: none;
     }
 }

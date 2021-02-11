@@ -157,6 +157,10 @@
         width: 80%;
     }
     
+    #partners-memo {
+        font-size: 10px;
+    }
+    
     #partners-container-item {
         display: block;
         width: 90%;
@@ -177,5 +181,10 @@
         background-repeat: no-repeat;
         background-position: right bottom;
         background-size: 25%;
+    }
+
+    .partners-container-item-content {
+        height: unset;
+        padding-bottom: 25px;
     }
 }
