@@ -161,55 +161,7 @@
     font-size: 14px;
 }
 
-@media only screen and (max-width: 760px) {
-    #topics {
-        padding-bottom: 10px;
-    }
-    
-    #topics-container {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 80%;
-    }
-    
-    .topics-container-item-content {        
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        background-position: left top;
-        padding-left: 40px;
-        padding-top: 60px;
-    }
-    
-    #topics-container-item {
-        display: block;
-        width: 80%;
-        position: relative;
-        margin-left: auto;
-        margin-right: auto; 
-        margin-bottom: 20px;
-    }
-    
-    .fci-bg-engine p {
-        margin-left:20px;
-    }
-
-    #topics-memo {
-        font-size: 10px;
-    }
-
-    .topic-summary-cell {
-        display: none;
-    }
-}
-
-@media only screen and (max-device-width: 760px) {
-    #topics {
-        padding-bottom: 10px;
-    }
+@media only screen and (max-device-width: 760px), (max-width: 760px) {
     
     #topics-container {
         display: block;
@@ -257,5 +209,9 @@
 
     .topics-list-row {
         height: 150px;
+    }
+
+    .topics-positions-link {
+        display: none;
     }
 }
