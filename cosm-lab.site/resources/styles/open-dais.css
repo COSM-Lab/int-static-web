@@ -5,7 +5,6 @@
     background-repeat: no-repeat;
     background-position: 25% bottom;
     background-size: 20%;
-    min-width: 1100px;
 }
 
 #od-header-content-title {
@@ -33,6 +32,15 @@
     text-align: right;
     margin-top: 50px;
     padding-right: 120px;
+}
+
+#goals-memo {
+    text-align: left;
+    font-family: 'IBM Plex Sans', serif;
+    color: black;
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .od-topic-icon-cell {
@@ -191,4 +199,18 @@
 .speacker-bio a {
     text-decoration: none;
     color: #3F88C5;
+}
+
+@media only screen and (max-device-width: 760px), (max-width: 760px) {
+    #od-header-content-title {
+        background-position: 595 145;
+    }
+
+    .lector-memo {
+        font-size: 10px;
+    }
+
+    #goals-memo {
+        font-size: 12px;
+    }
 }
