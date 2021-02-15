@@ -189,6 +189,10 @@
     background-image: url('../images/od/speakers/ros.png');
 }
 
+.speacker-ap {
+    background-image: url('../images/od/speakers/ap.png');
+}
+
 .speacker-bio {
     display: table-cell;
     padding: 20px;
