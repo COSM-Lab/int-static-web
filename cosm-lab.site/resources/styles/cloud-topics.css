@@ -214,4 +214,43 @@
     .topics-positions-link {
         display: none;
     }
+
+    #topics {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+
+    #topics-title {
+        font-family: 'IBM Plex Sans', serif;
+        font-weight: bold;
+        color: black;
+        font-size: 65px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        background-size: 50%;
+    }
+
+    #topics-memo {
+        font-family: 'IBM Plex Sans', serif;
+        color: black;
+        font-size: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+
+    .topics-projects-holder {
+        width: 90%;
+        min-width: 550px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .topics-list-table {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

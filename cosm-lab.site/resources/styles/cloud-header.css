@@ -209,9 +209,10 @@ header {
 }
 
 .header-main-menu-item a:hover {
-    background-image: url('../images/obvodka.png');
+    background-image: url('../images/web-12.png');
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 60%;
+    background-position: right bottom;
 }
 
 .header-main-menu-item-selected {
@@ -315,10 +316,15 @@ header {
       }
       #header-mobile-menu-icon {
         display: block;
+        top: 80;
     }
 
     .header-with-wallpaper {
         background-image: unset;
+    }
+
+    .header-menu-holder {
+        height: 180px;
     }
 
     #header-content-title {
@@ -331,7 +337,34 @@ header {
         background-position: 330 70;
     }
 
+    .header-menu-languages {
+        display: block;
+        height: 65px;
+        width: 100%;
+        padding-top: 20px;
+        margin-bottom: 10px;
+    }
+    
     .header-menu-language {
+        float: right;
+        padding: 10px;
         margin-right: 30px;
+    }
+    
+    .header-menu-language-selected {
+        background-image: url('../images/small-frame.png');
+        background-position: 30% 10%;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
+    .header-menu-language a {
+        font-family: 'IBM Plex Sans Condensed';
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        vertical-align: text-bottom;
+        float: right;
     }
 }

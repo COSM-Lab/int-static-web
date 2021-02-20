@@ -156,6 +156,30 @@
     .projects-positions-link {
         display: none;
     }
+
+    #positions {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+
+    #positions-title {
+        font-family: 'IBM Plex Sans', serif;
+        font-weight: bold;
+        color: black;
+        font-size: 65px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        background-size: 50%;
+    }
+
+    .positions-projects-holder {
+        width: 90%;
+        min-width: 550px;
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
 
 @media only screen and (max-device-width: 760px) {
@@ -206,4 +230,29 @@
     .projects-positions-link {
         display: none;
     }
+
+    #positions {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+
+    #positions-title {
+        font-family: 'IBM Plex Sans', serif;
+        font-weight: bold;
+        color: black;
+        font-size: 65px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        background-size: 50%;
+    }
+
+    .positions-projects-holder {
+        width: 90%;
+        min-width: 550px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
 }

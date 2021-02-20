@@ -120,10 +120,7 @@
 }
 
 @media only screen and (max-width: 760px) {
-    #projects {
-        padding-bottom: 10px;
-    }
-    
+
     #projects-container {
         display: block;
         margin-left: auto;
@@ -155,10 +152,7 @@
 }
 
 @media only screen and (max-device-width: 760px) {
-    #projects {
-        padding-bottom: 10px;
-    }
-    
+   
     #projects-container {
         display: block;
         margin-left: auto;
