@@ -74,6 +74,10 @@
     border-bottom: 1px solid white;
 }
 
+.od-topics-list-row:last-child div {
+    border-bottom:0px;
+}
+
 .lector-memo {
     font-family: 'IBM Plex Sans', serif;
     font-size: 20px;
@@ -102,7 +106,7 @@
 
 
 .participants-logos-item {
-    width: 250px;
+    width: 240px;
     height: 200px;
     margin: 20px;
     font-family: 'IBM Plex Sans', serif;
@@ -212,9 +216,15 @@
 
     .lector-memo {
         font-size: 10px;
+        margin-bottom: 40px;
     }
 
     #goals-memo {
         font-size: 12px;
+    }
+
+    .speacker-picture {
+        background-position-x: center;
+        background-position-y: 25px;
     }
 }
