@@ -292,6 +292,12 @@ header {
           background-repeat: no-repeat;
           
       }
+
+      .header-lab-logo a {
+          position: relative;
+          top: -120px;
+          left: 20px;
+      }
       
       .header-main-menu-item {
           display: block;
@@ -316,7 +322,7 @@ header {
       }
       #header-mobile-menu-icon {
         display: block;
-        top: 40;
+        top: 45;
     }
 
     .header-with-wallpaper {
@@ -343,7 +349,7 @@ header {
         width: 200px;
         margin-left: auto;
         margin-right: auto;
-        padding-top: 20px;
+        padding-top: 80px;
         margin-bottom: 10px;
     }
     
