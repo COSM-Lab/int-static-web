@@ -1,0 +1,586 @@
+<html>
+
+    <head>
+        <title>
+            COSM :: Open Dais - Knowledge and Experience Sharing Community
+        </title>
+        
+        <meta name="viewport" content="user-scalable=no">
+        
+		
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" />
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed" />
+        <link type="text/css" rel='stylesheet' href='../resources/styles/cloud-root.css?1614743851502' media='all' />
+        <link type="text/css" rel='stylesheet' href='../resources/styles/cloud-header.css?1614743851502' media='all' />
+        <link type="text/css" rel='stylesheet' href='../resources/styles/cloud-banner.css?1614743851502' media='all' />
+        <link type="text/css" rel='stylesheet' href='../resources/styles/cloud-next-event.css?1614743851502' media='all' />
+        <link type="text/css" rel='stylesheet' href='../resources/styles/cloud-projects.css?1614743851502' media='all' />
+        <link type="text/css" rel='stylesheet' href='../resources/styles/cloud-partners.css?1614743851502' media='all' />
+        <link type="text/css" rel='stylesheet' href='../resources/styles/cloud-positions.css?1614743851502' media='all' />
+        <link type="text/css" rel='stylesheet' href='../resources/styles/cloud-topics.css?1614743851502' media='all' />
+        <link type="text/css" rel='stylesheet' href='../resources/styles/cloud-footer.css?1614743851502' media='all' />
+        <link type="text/css" rel='stylesheet' href='../resources/styles/open-dais.css?1614743851502' media='all' />
+        
+        <link rel="stylesheet" href="../resources/3pp/OwlCarousel2-2.2.1/assets/owl.carousel.min.css" />
+        <link rel="stylesheet" href="../resources/3pp/OwlCarousel2-2.2.1/assets/owl.theme.sdcloud-default.css" />
+        
+        <!-- Scripts -->
+        <script type='text/javascript' src='../resources/scripts/jquery.js?1614743851502'></script>
+        <script type='text/javascript' src='../resources/scripts/jquery-migrate.min.js?1614743851502'></script>
+        <script type='text/javascript' src='../resources/3pp/OwlCarousel2-2.2.1/owl.carousel.min.js?1614743851502'></script>
+        <script type='text/javascript' >
+            $(document).ready(function(){
+                var owl = $('.owl-carousel');
+               
+                owl.owlCarousel({
+                    items: 1,
+                    loop: true,
+                    center: true,
+                    navigation: true,
+                    slideSpeed: 60,
+                    paginationSpeed: 800,
+                    singleItem: true,
+                    autoplayTimeout: 5000,
+                    autoplay: false,
+                    dots:false
+                });
+                
+                $(window).resize(handleResize);
+            });
+            
+            toggleMobileMenu = function() {
+                $("#header-main-menu").toggle(300);
+            }
+            
+            function handleResize(){
+                if ($("#header-mobile-menu-icon").css("display") == "none" ){
+                    $("#header-main-menu").show(600);
+                } else {
+                    $("#header-main-menu").hide();
+                }
+            }
+        </script>
+        
+        <script>
+            $(document).ready(function(){
+              // Add smooth scrolling to all links
+              $("a").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                  // Prevent default anchor click behavior
+                  event.preventDefault();
+
+                  // Store hash
+                  var hash = this.hash;
+
+                  // Using jQuery's animate() method to add smooth page scroll
+                  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                  $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                  }, 800, function(){
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                  });
+                } // End if
+              });
+
+              $("div.carousel-controls-item-overview").click(function(e){
+                console.log(e.target.parentNode.nextSibling);
+                var owl = $(e.target.parentNode.nextSibling.nextSibling).data('owl.carousel');
+                owl.to(0)
+              });
+              $("div.carousel-controls-item-video").click(function(e){
+                var owl = $(e.target.parentNode.nextSibling.nextSibling).data('owl.carousel');
+                owl.to(1)
+              });
+              $("div.carousel-controls-item-slides").click(function(e){
+                var owl = $(e.target.parentNode.nextSibling.nextSibling).data('owl.carousel');
+                owl.to(2)
+              });
+            });
+        </script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-3VPCMBVQJ1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-3VPCMBVQJ1');
+        </script>
+    </head>
+    
+    <body>
+        <div id="page-container">
+            <div id="content-wrap">
+                <header class="od-header-with-wallpaper">
+                    <div class="header-menu-holder">
+                        <!--div class="header-menu-languages">
+                            <div class="header-menu-language">
+                                <a href="/ru/">ru</a>
+                            </div>
+                            <div class="header-menu-language header-menu-language-selected">
+                                <a href="/en/">en</a>
+                            </div>
+                        </div-->
+                        <div class="header-lab-logo">
+                            <a href="http://cosm-lab.science" class="header-main-menu-lab-name">cosm</a>
+                        </div>
+                        <div id="header-menu">
+                           
+                        </div>
+                    </div>
+                    <div class="header-university-logos-holder">
+                        <div class="header-university-logos header-blank-logo">
+                        </div>
+                        <a href="https://itmo.ru/en" target="_blank">
+                            <div class="header-university-logos header-itmo-logo-en">
+                            </div>
+                        </a>
+                        <a href="https://scs.ifmo.ru/en/" target="_blank">
+                            <div class="header-university-logos header-faculty-logo">
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div id="header-content">
+                        <div id="od-header-content-title">
+                            Open Dais 
+                        </div>
+                        <div id="od-header-content-subtitle">
+                            Past events
+                        </div>
+                        
+                            <!--a href="javascript:void(0);" onclick="toggleMobileMenu()">
+                                <div id="header-mobile-menu-icon"></div>
+                            </a-->
+                    </div>
+                    
+                </header>
+                
+                <div class="od-sections-holder">
+                    <div class="od-section">
+                        <div id="positions">
+                            <div class="od-past-event-title">
+                                <u>Session 04:</u> Software Verification on the ASIP CAD Example or How to Trust Your Team and Yourself
+                            </div>
+                            
+                            <div class="od-past-event-holder">
+                                <div class="carousel-controls">
+                                    <div class="carousel-controls-item carousel-controls-item-overview">Overview</div>
+                                    <div class="carousel-controls-item carousel-controls-item-video" >Video</div>
+                                    <div class="carousel-controls-item carousel-controls-item-slides" >Slides</div>
+                                </div>
+                                <div class="owl-carousel owl-theme">
+                                    <div>
+                                        <div class="speacker-poster-container">
+                                            <div class="speacker-poster">
+                                                <div class="speacker-picture speacker-ap">
+                                                </div>
+                                                <div class="speacker-bio">
+                                                    <p><u>Speacker:</u> Ph.D. Aleksandr Penskoi</p>
+                                                    <p><u>From:</u> ITMO University, Russia</p>    
+                                                    <p><u>Live date:</u> April 29, 2021</p>
+                                                    <p><u>Description:</u>The development of complicated software is always associated with many difficulties, problems, and errors. The quality verification process allows us to recognize many of these issues on their occurrence. The organization of automated and holistic verification is an important task for any software development. Especially, it is critical to a pet research project, which involves young specialists who are still learning the art of development. This report is focusing on verification problems and approaches used in the ongoing NITTA project. This project is dedicated to the development of CAD for hard-real time application-specific processors, which used a wide specter of technologies: Verilog (digital circuitry), Haskell (CAD itself), TypeSctipt (rich web application as UI), and in future Rust (control system) and Python (ML-based synthesis method). That raises the main question of the report: continuous integrity checking across different technologies and domains, including end-to-end automated software static typing, Properties-Based Testing, embedded Domain-Specific Languages, co-verification of tools, and target system software and hardware.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="spacer" style="clear: both;"></div>
+                                    </div>
+        
+                                    <div>
+                                        <div class="speacker-poster-container od-past-event-info-card">
+                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/3uR1gPU2RGQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </div>
+                                        <div class="spacer" style="clear: both;"></div>
+                                    </div>
+        
+                                    <div>
+                                        <div class="speacker-poster-container">
+                                            <div style="margin-left: auto; margin-right: auto; width: 610px; height: 376px;">
+                                                <iframe src="https://onedrive.live.com/embed?cid=A8A7D38E590717D1&amp;resid=A8A7D38E590717D1%21354772&amp;authkey=AO8NX7MGVocWA2E&amp;em=2&amp;wdAr=1.7775905644481886" width="610px" height="367px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+                                            </div>
+                                        </div>
+                                        <div class="spacer" style="clear: both;"></div>
+                                    </div>
+                                </div>                      
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="od-section">
+                        <div id="positions">
+                            <div class="od-past-event-title">
+                                <u>Session 03:</u> Temporal Modeling in Context-aware Computing
+                            </div>
+                            
+                            <div class="od-past-event-holder">
+                                <div class="carousel-controls">
+                                    <div class="carousel-controls-item carousel-controls-item-overview">Overview</div>
+                                    <div class="carousel-controls-item carousel-controls-item-video" >Video</div>
+                                    <div class="carousel-controls-item carousel-controls-item-slides" >Slides</div>
+                                </div>
+                                <div class="owl-carousel owl-theme">
+                                    <div>
+                                        <div class="speacker-poster-container">
+                                            <div class="speacker-poster">
+                                                <div class="speacker-picture speacker-jb">
+                                                </div>
+                                                <div class="speacker-bio">
+                                                    <p><u>Speacker:</u> Ph.D. Ivan Perl</p>
+                                                    <p><u>From:</u> UNISINOS, Brazil</p>    
+                                                    <p><u>Live date:</u> April 13, 2021</p>
+                                                    <p><u>Description:</u> Time is a strategic aspect when we model context-aware systems. Despite natural and consensual perception of time, 
+                                                        the integrated modeling of its dimensions for the development of context-aware software is a recent research topic. 
+                                                        Context Histories store the Past, Profile Management allows to model the Present and Context Prediction anticipates 
+                                                        the Future. This talk addresses the modeling of these three temporal dimensions, indicates challenges for the treatment 
+                                                        of each dimension and discusses a system architecture to manage the temporal aspects in context-aware computing. 
+                                                        The <a href="https://doi.org/10.5753/sbcup.2019.6590" target="_blank">following article</a> is a reference to this talk.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="spacer" style="clear: both;"></div>
+                                    </div>
+        
+                                    <div>
+                                        <div class="speacker-poster-container od-past-event-info-card">
+                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/kzeW2oQ1u50" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </div>
+                                        <div class="spacer" style="clear: both;"></div>
+                                    </div>
+        
+                                    <div>
+                                        <div class="speacker-poster-container">
+                                            <div style="margin-left: auto; margin-right: auto; width: 610px; height: 376px;">
+                                                TBD
+                                            </div>
+                                        </div>
+                                        <div class="spacer" style="clear: both;"></div>
+                                    </div>
+                                </div>                      
+                            </div>
+                        
+                        </div>
+                    </div>
+
+                    <div class="od-section">
+                        <div id="positions">
+                            <div class="od-past-event-title">
+                                <u>Session 02:</u> Machine Learning for real-world problems (5 days)
+                            </div>
+                            <div class="days-holder">
+                                <div class="od-past-event-title">
+                                    <u>Day 1:</u> Introduction to Machine Lerning
+                                </div>
+
+                                <div class="od-past-event-holder">
+                                    <div class="carousel-controls">
+                                        <div class="carousel-controls-item carousel-controls-item-overview">Overview</div>
+                                        <div class="carousel-controls-item carousel-controls-item-video" >Video</div>
+                                        <div class="carousel-controls-item carousel-controls-item-slides" >Slides</div>
+                                    </div>
+                                    <div class="owl-carousel owl-theme">
+                                        <div>
+                                            <div class="speacker-poster-container">
+                                                <div class="speacker-poster">
+                                                    <div class="speacker-picture speacker-js">
+                                                    </div>
+                                                    <div class="speacker-bio">
+                                                        <p><u>Speacker:</u> Dr. Jasminder Kaur Sandhu</p>
+                                                        <p><u>From:</u> Chitkara University Research and Innovation Network (CURIN), Chitkara University, India</p>    
+                                                        <p><u>Live date:</u> March 23, 2021</p>
+                                                        <p><u>Description:</u> Introduction to Machine Lerning.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="spacer" style="clear: both;"></div>
+                                        </div>
+            
+                                        <div>
+                                            <div class="speacker-poster-container od-past-event-info-card">
+                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/CEa8nFa8LsI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            </div>
+                                            <div class="spacer" style="clear: both;"></div>
+                                        </div>
+            
+                                        <div>
+                                            <div class="speacker-poster-container">
+                                                <div style="margin-left: auto; margin-right: auto; width: 610px; height: 376px;">
+                                                    <iframe src="https://onedrive.live.com/embed?cid=A8A7D38E590717D1&amp;resid=A8A7D38E590717D1%21353895&amp;authkey=AJfG0mAqiWxLxPI&amp;em=2&amp;wdAr=1.7777777777777777" width="610px" height="367px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+                                                </div>
+                                            </div>
+                                            <div class="spacer" style="clear: both;"></div>
+                                        </div>
+                                    </div>                      
+                                </div>
+                                
+                                <div class="od-past-event-title">
+                                    <u>Day 2:</u> Addressing Real-World Problems
+                                </div>
+
+                                <div class="od-past-event-holder">
+                                    <div class="carousel-controls">
+                                        <div class="carousel-controls-item carousel-controls-item-overview">Overview</div>
+                                        <div class="carousel-controls-item carousel-controls-item-video" >Video</div>
+                                        <div class="carousel-controls-item carousel-controls-item-slides" >Slides</div>
+                                    </div>
+                                    <div class="owl-carousel owl-theme">
+                                        <div>
+                                            <div class="speacker-poster-container">
+                                                <div class="speacker-poster">
+                                                    <div class="speacker-picture speacker-js">
+                                                    </div>
+                                                    <div class="speacker-bio">
+                                                        <p><u>Speacker:</u> Dr. Jasminder Kaur Sandhu</p>
+                                                        <p><u>From:</u> Chitkara University Research and Innovation Network (CURIN), Chitkara University, India</p>    
+                                                        <p><u>Live date:</u> March 24, 2021</p>
+                                                        <p><u>Description:</u> Addressing Real-World Problems.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="spacer" style="clear: both;"></div>
+                                        </div>
+            
+                                        <div>
+                                            <div class="speacker-poster-container od-past-event-info-card">
+                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/-3qw--jfG_A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            </div>
+                                            <div class="spacer" style="clear: both;"></div>
+                                        </div>
+            
+                                        <div>
+                                            <div class="speacker-poster-container">
+                                                <div style="margin-left: auto; margin-right: auto; width: 610px; height: 376px;">
+                                                    TBD
+                                                </div>
+                                            </div>
+                                            <div class="spacer" style="clear: both;"></div>
+                                        </div>
+                                    </div>                      
+                                </div>
+
+                                <div class="od-past-event-title">
+                                    <u>Day 3:</u> Implementation of Machine Learning Models
+                                </div>
+
+                                <div class="od-past-event-holder">
+                                    <div class="carousel-controls">
+                                        <div class="carousel-controls-item carousel-controls-item-overview">Overview</div>
+                                        <div class="carousel-controls-item carousel-controls-item-video" >Video</div>
+                                        <div class="carousel-controls-item carousel-controls-item-slides" >Slides</div>
+                                    </div>
+                                    <div class="owl-carousel owl-theme">
+                                        <div>
+                                            <div class="speacker-poster-container">
+                                                <div class="speacker-poster">
+                                                    <div class="speacker-picture speacker-js">
+                                                    </div>
+                                                    <div class="speacker-bio">
+                                                        <p><u>Speacker:</u> Dr. Jasminder Kaur Sandhu</p>
+                                                        <p><u>From:</u> Chitkara University Research and Innovation Network (CURIN), Chitkara University, India</p>    
+                                                        <p><u>Live date:</u> March 25, 2021</p>
+                                                        <p><u>Description:</u> Implementation of Machine Learning Models.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="spacer" style="clear: both;"></div>
+                                        </div>
+            
+                                        <div>
+                                            <div class="speacker-poster-container od-past-event-info-card">
+                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/arxtd70XiKE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            </div>
+                                            <div class="spacer" style="clear: both;"></div>
+                                        </div>
+            
+                                        <div>
+                                            <div class="speacker-poster-container">
+                                                <div style="margin-left: auto; margin-right: auto; width: 610px; height: 376px;">
+                                                    TBD
+                                                </div>
+                                            </div>
+                                            <div class="spacer" style="clear: both;"></div>
+                                        </div>
+                                    </div>                      
+                                </div>
+
+                                <div class="od-past-event-title">
+                                    <u>Day 4:</u> Regression and Classification
+                                </div>
+
+                                <div class="od-past-event-holder">
+                                    <div class="carousel-controls">
+                                        <div class="carousel-controls-item carousel-controls-item-overview">Overview</div>
+                                        <div class="carousel-controls-item carousel-controls-item-video" >Video</div>
+                                        <div class="carousel-controls-item carousel-controls-item-slides" >Slides</div>
+                                    </div>
+                                    <div class="owl-carousel owl-theme">
+                                        <div>
+                                            <div class="speacker-poster-container">
+                                                <div class="speacker-poster">
+                                                    <div class="speacker-picture speacker-js">
+                                                    </div>
+                                                    <div class="speacker-bio">
+                                                        <p><u>Speacker:</u> Dr. Jasminder Kaur Sandhu</p>
+                                                        <p><u>From:</u> Chitkara University Research and Innovation Network (CURIN), Chitkara University, India</p>    
+                                                        <p><u>Live date:</u> March 26, 2021</p>
+                                                        <p><u>Description:</u> Regression and Classification.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="spacer" style="clear: both;"></div>
+                                        </div>
+            
+                                        <div>
+                                            <div class="speacker-poster-container od-past-event-info-card">
+                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/T9Vm6lFtXRY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            </div>
+                                            <div class="spacer" style="clear: both;"></div>
+                                        </div>
+            
+                                        <div>
+                                            <div class="speacker-poster-container">
+                                                <div style="margin-left: auto; margin-right: auto; width: 610px; height: 376px;">
+                                                    TBD
+                                                </div>
+                                            </div>
+                                            <div class="spacer" style="clear: both;"></div>
+                                        </div>
+                                    </div>                      
+                                </div>
+
+                                <div class="od-past-event-title">
+                                    <u>Day 5:</u> Hands-on experience with R and Python
+                                </div>
+
+                                <div class="od-past-event-holder">
+                                    <div class="carousel-controls">
+                                        <div class="carousel-controls-item carousel-controls-item-overview">Overview</div>
+                                        <div class="carousel-controls-item carousel-controls-item-video" >Video</div>
+                                        <div class="carousel-controls-item carousel-controls-item-slides" >Slides</div>
+                                    </div>
+                                    <div class="owl-carousel owl-theme">
+                                        <div>
+                                            <div class="speacker-poster-container">
+                                                <div class="speacker-poster">
+                                                    <div class="speacker-picture speacker-js">
+                                                    </div>
+                                                    <div class="speacker-bio">
+                                                        <p><u>Speacker:</u> Dr. Jasminder Kaur Sandhu</p>
+                                                        <p><u>From:</u> Chitkara University Research and Innovation Network (CURIN), Chitkara University, India</p>    
+                                                        <p><u>Live date:</u> March 27, 2021</p>
+                                                        <p><u>Description:</u> Hands-on experience with R and Python.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="spacer" style="clear: both;"></div>
+                                        </div>
+            
+                                        <div>
+                                            <div class="speacker-poster-container od-past-event-info-card">
+                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/0n69ibnb3fM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            </div>
+                                            <div class="spacer" style="clear: both;"></div>
+                                        </div>
+            
+                                        <div>
+                                            <div class="speacker-poster-container">
+                                                <div style="margin-left: auto; margin-right: auto; width: 610px; height: 376px;">
+                                                    TBD
+                                                </div>
+                                            </div>
+                                            <div class="spacer" style="clear: both;"></div>
+                                        </div>
+                                    </div>                      
+                                </div>
+                            </div><!--days end-->
+                        
+                        </div>
+                    </div>
+
+
+
+                    <div class="od-section">
+                        <div id="positions">
+                            <div class="od-past-event-title">
+                                Session 01: <u>Complex systems and why do they fail</u>
+                            </div>
+                            
+                            <div class="od-past-event-holder">
+                                <div class="carousel-controls">
+                                    <div class="carousel-controls-item carousel-controls-item-overview">Overview</div>
+                                    <div class="carousel-controls-item carousel-controls-item-video" >Video</div>
+                                    <div class="carousel-controls-item carousel-controls-item-slides" >Slides</div>
+                                </div>
+                                <div class="owl-carousel owl-theme">
+                                    <div>
+                                        <div class="speacker-poster-container">
+                                            <div class="speacker-poster">
+                                                <div class="speacker-picture speacker-ip">
+                                                </div>
+                                                <div class="speacker-bio">
+                                                    <p><u>Speacker:</u> Ph.D. Ivan Perl</p>
+                                                    <p><u>From:</u> ITMO University, Russia <a href="http://cosm-lab.science" target="_blank">Cloud-Oriented Solutions and Modelling (COSM)</a></p>    
+                                                    <p><u>Live date:</u> March 9, 2021</p>
+                                                    <p><u>Description:</u> In this talk I'll try to cover key apects in understanding systems complexity and reasons why they may fail. We will follow a jouney that starts from Hegelian dialectics and up to modern works from Grady Booch, Evgeny Sedov and Richard I. Cook.
+                                                        At the end, I hope that listeners will fear less and understand more the meaning of the complixily and its dominating role in entire moden world.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="spacer" style="clear: both;"></div>
+                                    </div>
+        
+                                    <div>
+                                        <div class="speacker-poster-container od-past-event-info-card">
+                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/0YrhkuGOHQo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </div>
+                                        <div class="spacer" style="clear: both;"></div>
+                                    </div>
+        
+                                    <div>
+                                        <div class="speacker-poster-container">
+                                            <div style="margin-left: auto; margin-right: auto; width: 610px; height: 376px;">
+                                                <iframe src="https://onedrive.live.com/embed?resid=A8A7D38E590717D1%21353891&amp;authkey=%21AH_lQf2D4xsctSs&amp;em=2&amp;wdAr=1.7777777777777777" width="610px" height="367px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+                                            </div>
+                                        </div>
+                                        <div class="spacer" style="clear: both;"></div>
+                                    </div>
+                                </div>                      
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <div id="footer-content" class="with-line-splitter"> 
+                    <div id="footer-content-holder">
+                        <div class="footer-content-row">
+                            <div class="footer-left-wing">
+                                &nbsp;&nbsp;COSM
+                            </div>
+                            <div class="footer-center">
+                                <span>
+                                    designed by 
+                                    <a href="https://www.behance.net/svalion" target="_blank" style="text-decoration:none; color: lightgray;">
+                                        @svalion
+                                    </a>
+                                    <br />
+                                    COSM lab &copy; 2019-2021. All rights reserved
+                                </span>
+                            </div>
+                            <div class="footer-right-wing">
+                                ITMO University&nbsp;&nbsp;
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+
+</html>

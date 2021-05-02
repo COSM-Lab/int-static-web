@@ -321,3 +321,70 @@
         background-position-y: 25px;
     }
 }
+
+.od-section:nth-of-type(odd) {
+    background-color: white;
+    color: black;
+    background-image: url('../images/web-21.png');
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 25%;
+}
+
+.od-section:nth-of-type(even) {
+    background-color: #48A1D3;
+    color: white;
+    background-image: url(../images/web-26.png), url(../images/web-27.png);
+    background-repeat: no-repeat;
+    background-position: right 50%, left bottom;
+    background-size: 13%, 22%;
+}
+
+
+.od-past-event-title {
+    font-family: 'IBM Plex Sans', serif;
+    font-weight: bold;
+    color: black;
+    font-size: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    background-size: 50%;
+    margin-top: 35px;
+}
+
+.od-past-event-holder {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.od-past-event-info-card {
+    text-align: center;
+    justify-content: center;
+}
+
+.carousel-controls {
+    width: 100%;
+    display: fixed;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.carousel-controls-item {
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    font-family: 'IBM Plex Sans', serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.days-holder {
+    height: 700px;
+    overflow: auto;
+    
+}
