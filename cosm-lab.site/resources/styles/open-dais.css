@@ -320,9 +320,14 @@
         background-position-x: center;
         background-position-y: 25px;
     }
+
+    #footer-content {
+        background-position: 50% 40%;
+    }
 }
 
 .od-section:nth-of-type(odd) {
+    padding-top: 35px;
     background-color: white;
     color: black;
     background-image: url('../images/web-21.png');
@@ -332,6 +337,7 @@
 }
 
 .od-section:nth-of-type(even) {
+    padding-top: 35px;
     background-color: #48A1D3;
     color: white;
     background-image: url(../images/web-26.png), url(../images/web-27.png);
@@ -350,7 +356,6 @@
     margin-right: auto;
     width: 90%;
     background-size: 50%;
-    margin-top: 35px;
 }
 
 .od-past-event-holder {
