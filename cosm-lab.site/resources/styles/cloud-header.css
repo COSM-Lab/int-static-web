@@ -114,6 +114,18 @@ header {
     background-image: url('../images/web-faculty-header-logo.png');
 }
 
+.header-youtube-logo {
+    width: 30px;
+    background-image: url('../images/youtube-logo.png');
+    background-position: 50% 25%;
+}
+
+.header-twitter-logo {
+    width: 30px;
+    background-image: url('../images/twitter-logo.png');
+    background-position: 50% 5%;
+}
+
 .header-lab-logo {
     float: left;
     margin-top:20px;
