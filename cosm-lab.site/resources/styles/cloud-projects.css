@@ -76,6 +76,12 @@
 
 }
 
+.fci-logo-opendais {
+    background-size: 30%;
+    background-image: url('../images/lectern-black.png');
+    margin-bottom: 20px;
+}
+
 .fci-logo-sdcloud {
     background-image: url('../images/web-05.png');
     margin-bottom: 20px;
