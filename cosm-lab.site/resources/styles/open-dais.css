@@ -290,6 +290,10 @@
     background-image: url('../images/od/speakers/ap.png');
 }
 
+.speacker-rsb {
+    background-image: url('../images/od/speakers/rsb.png');
+}
+
 .speacker-bio {
     display: table-cell;
     padding: 20px;
