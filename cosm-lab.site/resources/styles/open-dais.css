@@ -294,6 +294,10 @@
     background-image: url('../images/od/speakers/rsb.png');
 }
 
+.speacker-jsr {
+    background-image: url('../images/od/speakers/jsr.png');
+}
+
 .speacker-bio {
     display: table-cell;
     padding: 20px;
