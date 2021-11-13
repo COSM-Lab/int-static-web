@@ -299,6 +299,10 @@
     background-image: url('../images/od/speakers/jsr.png');
 }
 
+.speacker-ib {
+    background-image: url('../images/od/speakers/ib.png');
+}
+
 .speacker-bio {
     display: table-cell;
     padding: 20px;
