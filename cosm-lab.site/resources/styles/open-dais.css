@@ -303,6 +303,10 @@
     background-image: url('../images/od/speakers/ib.png');
 }
 
+.speacker-nya {
+    background-image: url('../images/od/speakers/nya.png');
+}
+
 .speacker-bio {
     display: table-cell;
     padding: 20px;
