@@ -250,6 +250,12 @@
     background-repeat: no-repeat;
 }
 
+.bgu-logo {
+    background-image: url('../images/bgu-logo.png');
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
 
 .speacker-poster-container {
     display: table;
