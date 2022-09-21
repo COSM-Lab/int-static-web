@@ -61,7 +61,7 @@ body {
 }
 
 #content-wrap {
-  padding-bottom: 80px;    /* Footer height */
+  padding-bottom: 40px;    /* Footer height */
 }
 
 @media only screen and (max-width: 760px) {
