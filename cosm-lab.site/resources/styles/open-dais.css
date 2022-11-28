@@ -250,6 +250,13 @@
     background-repeat: no-repeat;
 }
 
+.uttarakhand-tu-logo {
+    background-image: url('../images/uttarakhand-tu-logo.png');
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+}
+
 .bgu-logo {
     background-image: url('../images/bgu-logo.png');
     background-position: center;
