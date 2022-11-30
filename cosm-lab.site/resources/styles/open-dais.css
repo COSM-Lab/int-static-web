@@ -320,6 +320,10 @@
     background-image: url('../images/od/speakers/nya.png');
 }
 
+.speacker-ab {
+    background-image: url('../images/od/speakers/ab.png');
+}
+
 .speacker-bio {
     display: table-cell;
     padding: 20px;
